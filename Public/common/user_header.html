@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="__CSS__/header.css" rel="stylesheet" type="text/css" />
+    <link href="__CSS__/footer.css" rel="stylesheet" type="text/css" />
+    <link href="__CSS__/list.css" rel="stylesheet" type="text/css" />
+    <link href="__CSS__/info.min.css" rel="stylesheet" type="text/css"/>
+    <link href="__CSS__/icon.css" rel="stylesheet" type="text/css"/>
+    <script src="__JS__/jquery-1.6.1.min.js"></script>
+    <title>个人中心</title>
+</head>
+
+<body>
+<header>
+    <div class="navBarWrap fixed">
+        <div class="navBar">
+            <nav>
+                <volist name="category" id="item">
+                    <if condition="$item.id eq $id">
+                        <a class="active" href="{$item.url}"> {$item.name}</a>
+                        <else/>
+                        <a  href="{$item.url}"> {$item.name}</a>
+                    </if>
+                </volist>
+            </nav>
+            <div class="navbaoliao"><a href="<?= U('Profile/User/publish') ?>">爆料投稿</a></div>
+            <div class="navlogin">
+                <?php if(!empty($p_uid)){ ?>
+                <a href="<?= U('Profile/User/index') ?>" class="navBarRegister"><?=$p_uname?></a>|<a href="javascript:void(0)" class="navBarRegister">退出</a>
+                <?php } else {?>
+                <a href="<?= U('Profile/User/register') ?>" class="navBarRegister">注册</a>|
+                <a href="<?= U('Profile/User/login') ?>"  class="zhiyou_login">登录<span class="line"></span></a>
+                <?php } ?>
+            </div>
+        </div>
+    </div>
+    <div class="headtop pertop">
+        <div class="headtop1">
+            <div class="headlogo"><a href="#"><img src="__IMG__/logo.png" width="159" height="50" /></a></div>
+            <div class="persearch">
+                <form>
+                    <input value="请输入您要的东西" type="search" />
+                    <button type="submit" value="search">搜索</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</header>

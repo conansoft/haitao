@@ -1,0 +1,138 @@
+<include file="./Public/common/user_header.html"/>
+<link href="__CSS__/content.css" rel="stylesheet" type="text/css"/>
+<link href="__CSS__/pagination.css" rel="stylesheet" type="text/css"/>
+<div class="container">
+    <div class="cont-left">
+        <!-- self-info start 个人简介 -->
+        <div class="self-info">
+            <div class="face-stuff">
+                <div class="face-stuff-img"><a href="#">
+                    <div style="display:none;" class="change-face"><span>更换头像</span></div>
+                </a>
+                    <!-- <a href="javascript:void(0);" style="cursor: default;"><div class="change-face" style="display: none;"><span>Lv2可更换</span></div></a> -->
+                    <img src="<?=(!empty($user['icon'])?$user['icon']:'__IMG__/default_middle.png')?>"></div>
+            </div>
+            <div class="cut-line"></div>
+            <div class="info-stuff">
+                <div class="info-stuff-set"><span class="info-stuff-nickname" style="max-width: 143px;"><a
+                        href="#"> <?=$user['name']?> </a></span> <span class="special-adjust">
+          <!-- <i class="icon-xiaobian" title="官方编辑"></i> -->
+          <a class="info-stuff-action my-massage-tip" href="#"><i class="icon-wodexiaoxi"></i><span>我的消息</span></a> <a
+                        class="info-stuff-action" href="#"><i class="icon-jifenduihuan"></i><span>积分兑换</span></a> <a
+                        class="info-stuff-action" href="#"><i
+                        class="icon-zhanghushezhi"></i><span>账户设置</span></a> </span></div>
+                <div class="info-stuff-assets">
+                    <div class="assets-part assets-points"><span class="assets-part-element assets-num">20</span> <span
+                            class="assets-part-element assets-title">积分</span></div>
+                    <div class="assets-part assets-experience"><span class="assets-part-element assets-num">20</span>
+                        <span class="assets-part-element assets-title">经验</span></div>
+                    <div class="assets-part assets-gold"><span class="assets-part-element assets-num">0</span> <span
+                            class="assets-part-element assets-title">金币</span></div>
+                    <div class="assets-part assets-prestige"><span class="assets-part-element assets-num">0</span> <span
+                            class="assets-part-element assets-title">威望</span></div>
+                </div>
+                <div class="info-stuff-words" style="overflow: hidden;white-space: nowrap;text-overflow: ellipsis;">
+                    LV3等级用户可以编辑个人简介，参考<a href="#" target="_blank" title="用户积分计划">用户积分计划</a>。
+                </div>
+            </div>
+        </div>
+        <!-- self-info end 个人简介 --> <!-- navtab start tab导航栏 navtab-selected 选中状态 -->
+        <ul class="navtab" data-selecttab="index">
+            <volist name="categoryList" id="category" key="k">
+                <li data-id="{$category.id}" class="navtab-title {$k==1?'index navtab-selected':''}"><a
+                        href="javascript:void(0)">{$category.name}&nbsp;{$category.count}</a></li>
+            </volist>
+            <li data-id="998" class="navtab-title comment"><a href="#">评论&nbsp;0</a></li>
+            <li data-id="999" class="navtab-title favorite"><a href="#">收藏&nbsp;0</a></li>
+        </ul>
+        <!-- navtab start tab导航栏 -->
+        <volist name="categoryList" id="category">
+            <div class="article_list" style="display: none">
+                <volist name="category.article.data" id="article">
+                    <div class="search-list" style="padding-left: 10px;">
+                        <div class="search-list-left"><a href="#" target="_blank" title=""> <span></span><img
+                                src="{$article.cover}" alt=""></a></div>
+                        <div class="search-list-right">
+                            <div class="list-title"><a href="#" target="_blank" title="">{$article.title}</a></div>
+                            <div class="list-detail">{$article.content}</div>
+                            <div class="list-stuff">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-line"></div>
+                </volist>
+                <div class="green-black">{$category['article']['page']}</div>
+            </div>
+        </volist>
+        <script>$(function () {
+            $('.article_list:eq(0)').show();
+            $('.navtab-title').click(function () {
+                $('.article_list').hide();
+                $('.article_list').eq($(this).index()).show();
+                $('.navtab-title').removeClass('navtab-selected');
+                $(this).addClass('navtab-selected');
+            });
+        })</script>
+    </div>
+    <div class="cont-right">
+        <!-- top start 原创达人排行榜 -->
+        <div class="top-title">原创达人榜</div>
+        <div class="line-solid"></div>
+        <volist name="starUsers" id="starUser" key="k">
+            <div class="top-element">
+                <div class="top-number">{$k}
+                    <div class="top-number-part"></div>
+                </div>
+                <div class="leftPicBlock">
+                    <a href="#" target="_blank">
+                        <img alt="" title=""
+                             src="http://res-c1.smzdm.com/smzdm_user_manager/data/avatar/003/27/58/43_avatar_small.jpg?1429785364"
+                             class="avatar avatar-36 photo avatar-default">
+                    </a>
+                </div>
+                <div class="top-nikename"><a href="#" target="_blank">{$starUser.name}</a></div>
+                <div class="top-action"><i class="icon-zan2"><!--[if lt IE 8]>赞<![endif]--></i>{$starUser.like_num} <i
+                        class="icon-collect">
+                    <!--[if lt IE 8]>收藏<![endif]--></i>{$starUser.collect_num}
+                </div>
+            </div>
+            <div class="line-dashed"></div>
+        </volist>
+        <!-- top end 原创达人排行榜 -->
+
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        $('.page').live('click', function () {
+            var url = $(this).data('href');
+            var categoryId = $('.navtab-selected').data('id');
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: {cid: categoryId},
+                dataType: "json",
+                success: function (data) {
+                    var list = data.data;
+                    var listHtml = '';
+                    for (var i = 0; i < list.length; i++) {
+                        listHtml += '<div class="search-list" style="padding-left: 10px;">'
+                                + '<div class="search-list-left"><a href="#" target="_blank" title=""> ' +
+                                '<span></span><img src="' + list[i]["cover"] + '" alt=""></a></div>'
+                                + '<div class="search-list-right">'
+                                + '<div class="list-title"><a href="#" target="_blank" title="">' + list[i]["title"] + '</a></div>'
+                                + ' <div class="list-detail">' + list[i]["content"] + '</div>'
+                                + '<div class="list-stuff"></div></div></div>'
+                                + '<div class="list-line"></div>';
+                    }
+                    listHtml += ' <div class="green-black">' + data.page + '</div>';
+                    $('.article_list:visible').html(listHtml);
+                    var pos = $('.navtab-selected').offset().top - 50;
+                    $("html,body").animate({scrollTop: pos}, 500);
+                }
+            });
+        })
+    })
+</script>
+<include file="./Public/common/footer.html"/>

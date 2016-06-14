@@ -1,0 +1,83 @@
+<include file="./Public/common/header.html"/>
+<link href="__CSS__/Personal.css" rel="stylesheet" type="text/css" />
+<section class="wrap">
+    <!-- pop-title -->
+    <div class="pop-title">
+        <div class="pop_name">登录</div><a href="<?= U('Profile/User/register') ?>" class="a_underline">注册</a>    </div>
+    <!-- pop-title end -->
+
+    <!-- pop-content -->
+    <div class="pop-content">
+        <form class="form-content" id="login_form">
+            <!-- form-item -->
+            <div class="form-item">
+                <div class="item-tip">用户名/邮箱</div>
+                <input class="form-input" name="email" value="" id="email" tabindex="1" type="text" placeholder="请输入邮箱" >
+                <span class="error"></span>
+            </div>
+            <!-- form-item end -->
+            <!-- form-item -->
+
+            <div class="form-item">
+                <div class="item-tip">密码</div>
+                <input id="pwd" class="form-input" name="pwd" type="password" placeholder="请输入密码">
+                <span class="error"></span>
+            </div>
+            <div class="twoWeeks"><input class="ckeckBox" checked="checked" tabindex="6" type="checkbox"><label for="agreement"><a href="#" class="a_underline" target="_blank">一个月内免登录</a>     <a href="#" class="a_underline" target="_blank">忘记密码？</a></label></div>
+
+
+            <p class="notice_error notice_error_300 "></p>
+            <!-- form-item end -->
+            <input class="btn_reg btn_regred" value="登&nbsp;&nbsp;录" tabindex="7" type="button" onclick="login()">
+        </form>
+
+        <!--<div class="co_login">联合登录<a href="http://zhiyou.smzdm.com/user/third/sina?redirect_to=http%3A%2F%2Fzhiyou.smzdm.com%2F" class="a_underline">新浪微博</a>-->
+        <!--<a href="http://zhiyou.smzdm.com/user/third/tencent?redirect_to=http%3A%2F%2Fzhiyou.smzdm.com%2F" class="a_underline">腾讯微博</a>-->
+        <!--<a href="http://zhiyou.smzdm.com/user/third/qq?redirect_to=http%3A%2F%2Fzhiyou.smzdm.com%2F" class="a_underline">腾讯QQ</a>-->
+        <!--<a href="http://zhiyou.smzdm.com/user/third/wmw?redirect_to=http%3A%2F%2Fzhiyou.smzdm.com%2F" class="a_underline">我买网</a>-->
+        <!--</div>-->
+    </div>
+    <!-- pop-content end -->
+
+</section>
+<script>
+    function login() {
+        if($("#email").val().isEmpty()){
+            $("#email").next(".error").html('请填写登陆邮箱');
+            return;
+        }
+        else{
+            if(!$("#email").val().isEmail())
+            {
+                $("#email").next(".error").html('邮箱格式不正确');return;
+            }
+            else{
+                $("#email").next(".error").html('');
+            }
+
+        }
+        if($("#pwd").val().isEmpty()){
+            $("#pwd").next(".error").html('请填写登陆密码');
+            return;
+        }
+        else{
+            $("#pwd").next(".error").html('');
+        }
+        $.ajax({
+            url: "<?= U('Profile/User/login') ?>",
+            data: $("#login_form").serialize(),
+            type: "POST",
+            dataType: "json"
+        }).done(function (result) {
+            $(".notice_error").html(result.msg);
+            if(result.status==true){
+                setTimeout(function () {
+                    location.href = "<?= U('/') ?>";
+                }, 2000);
+            }
+
+        })
+
+    }
+</script>
+<include file="./Public/common/footer.html"/>

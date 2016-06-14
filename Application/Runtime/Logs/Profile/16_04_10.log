@@ -1,0 +1,1015 @@
+[ 2016-04-10T11:59:42+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000286s ]
+NOTIC: D方法实例化没找到模型类Home\Profile\Model\CategoryModel
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0004s ]
+ERR: Think\Model:dbSelect方法不存在！
+
+[ 2016-04-10T12:01:21+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000285s ]
+NOTIC: D方法实例化没找到模型类Home\Profile\Model\CategoryModel
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0004s ]
+ERR: Think\Model:dbSelect方法不存在！
+
+[ 2016-04-10T12:01:22+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000264s ]
+NOTIC: D方法实例化没找到模型类Home\Profile\Model\CategoryModel
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0004s ]
+ERR: Think\Model:dbSelect方法不存在！
+
+[ 2016-04-10T12:01:45+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000930s ]
+NOTIC: D方法实例化没找到模型类Home\Profile\Model\CategoryModel
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0006s ]
+ERR: Think\Model:dbSelect方法不存在！
+
+[ 2016-04-10T12:01:46+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+NOTIC: D方法实例化没找到模型类Home\Profile\Model\CategoryModel
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0007s ]
+ERR: Think\Model:dbSelect方法不存在！
+
+[ 2016-04-10T12:01:46+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000302s ]
+NOTIC: D方法实例化没找到模型类Home\Profile\Model\CategoryModel
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0004s ]
+ERR: Think\Model:dbSelect方法不存在！
+
+[ 2016-04-10T12:01:47+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000273s ]
+NOTIC: D方法实例化没找到模型类Home\Profile\Model\CategoryModel
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0004s ]
+ERR: Think\Model:dbSelect方法不存在！
+
+[ 2016-04-10T12:01:47+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000286s ]
+NOTIC: D方法实例化没找到模型类Home\Profile\Model\CategoryModel
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0006s ]
+ERR: Think\Model:dbSelect方法不存在！
+
+[ 2016-04-10T12:01:47+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000258s ]
+NOTIC: D方法实例化没找到模型类Home\Profile\Model\CategoryModel
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0004s ]
+ERR: Think\Model:dbSelect方法不存在！
+
+[ 2016-04-10T12:01:47+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+NOTIC: D方法实例化没找到模型类Home\Profile\Model\CategoryModel
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0005s ]
+ERR: Think\Model:dbSelect方法不存在！
+
+[ 2016-04-10T12:01:47+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000268s ]
+NOTIC: D方法实例化没找到模型类Home\Profile\Model\CategoryModel
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0004s ]
+ERR: Think\Model:dbSelect方法不存在！
+
+[ 2016-04-10T12:01:47+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000681s ]
+NOTIC: D方法实例化没找到模型类Home\Profile\Model\CategoryModel
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0004s ]
+ERR: Think\Model:dbSelect方法不存在！
+
+[ 2016-04-10T12:01:47+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+NOTIC: D方法实例化没找到模型类Home\Profile\Model\CategoryModel
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0004s ]
+ERR: Think\Model:dbSelect方法不存在！
+
+[ 2016-04-10T12:03:21+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000265s ]
+NOTIC: D方法实例化没找到模型类Home\Profile\Model\CategoryModel
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0004s ]
+ERR: Think\Model:dbSelect方法不存在！
+
+[ 2016-04-10T12:05:05+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000276s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0004s ]
+ERR: Think\Model:dbSelect方法不存在！
+
+[ 2016-04-10T12:06:16+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0004s ]
+
+[ 2016-04-10T12:07:35+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0005s ]
+ERR: Think\Model:dbSelect方法不存在！
+
+[ 2016-04-10T12:08:07+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0004s ]
+ERR: Think\Model:dbSelect方法不存在！
+
+[ 2016-04-10T12:08:09+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0004s ]
+ERR: Think\Model:dbSelect方法不存在！
+
+[ 2016-04-10T12:08:17+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000267s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0004s ]
+ERR: Think\Model:dbSelect方法不存在！
+
+[ 2016-04-10T12:08:46+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000266s ]
+NOTIC: D方法实例化没找到模型类Home\Profile\Model\CategoryModel
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0004s ]
+ERR: Think\Model:dbSelect方法不存在！
+
+[ 2016-04-10T12:10:38+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000309s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0004s ]
+ERR: Think\Model:dbSelect方法不存在！
+
+[ 2016-04-10T12:12:06+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000041s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
+NOTIC: D方法实例化没找到模型类Home\Profile\Model\CategoryModel
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0004s ]
+ERR: Think\Model:dbSelect方法不存在！
+
+[ 2016-04-10T12:13:25+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000291s ]
+
+[ 2016-04-10T12:13:36+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000267s ]
+
+[ 2016-04-10T12:13:52+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+NOTIC: [8] Undefined index: Home://CategoryModel /Users/conan/ht_home/ThinkPHP/Common/functions.php 第 583 行.
+
+[ 2016-04-10T12:14:12+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000041s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000265s ]
+
+[ 2016-04-10T12:14:41+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+
+[ 2016-04-10T12:14:52+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+
+[ 2016-04-10T12:15:00+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000278s ]
+
+[ 2016-04-10T12:20:08+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+
+[ 2016-04-10T12:21:27+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+
+[ 2016-04-10T12:21:37+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000947s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001031s ]
+
+[ 2016-04-10T12:22:15+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000041s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000291s ]
+
+[ 2016-04-10T12:22:37+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+
+[ 2016-04-10T12:23:09+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+
+[ 2016-04-10T12:25:13+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000280s ]
+NOTIC: D方法实例化没找到模型类Home\Model\Model\CategoryModel
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0004s ]
+ERR: Think\Model:dbSelect方法不存在！
+
+[ 2016-04-10T12:25:40+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+
+[ 2016-04-10T12:26:03+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000280s ]
+
+[ 2016-04-10T12:27:06+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000291s ]
+
+[ 2016-04-10T12:27:32+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000262s ]
+NOTIC: D方法实例化没找到模型类Home\Home\Model\CategoryModel
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0004s ]
+ERR: Think\Model:dbSelect方法不存在！
+
+[ 2016-04-10T12:27:43+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000275s ]
+
+[ 2016-04-10T12:27:55+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000269s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yy_category` WHERE `is_delete` = 0 AND `parent` = 0  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/d8973804fdd7dcf730c13ad42da145ed.php 第 28 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/d8973804fdd7dcf730c13ad42da145ed.php 第 28 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/d8973804fdd7dcf730c13ad42da145ed.php 第 28 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/d8973804fdd7dcf730c13ad42da145ed.php 第 28 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/d8973804fdd7dcf730c13ad42da145ed.php 第 28 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/d8973804fdd7dcf730c13ad42da145ed.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007313s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007350s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000579s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000632s ]
+
+[ 2016-04-10T12:28:12+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000668s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/d8973804fdd7dcf730c13ad42da145ed.php 第 28 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/d8973804fdd7dcf730c13ad42da145ed.php 第 28 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/d8973804fdd7dcf730c13ad42da145ed.php 第 28 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/d8973804fdd7dcf730c13ad42da145ed.php 第 28 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/d8973804fdd7dcf730c13ad42da145ed.php 第 28 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/d8973804fdd7dcf730c13ad42da145ed.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007785s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007840s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000139s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000361s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000407s ]
+
+[ 2016-04-10T12:28:19+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/d8973804fdd7dcf730c13ad42da145ed.php 第 28 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/d8973804fdd7dcf730c13ad42da145ed.php 第 28 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/d8973804fdd7dcf730c13ad42da145ed.php 第 28 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/d8973804fdd7dcf730c13ad42da145ed.php 第 28 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/d8973804fdd7dcf730c13ad42da145ed.php 第 28 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/d8973804fdd7dcf730c13ad42da145ed.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005213s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005246s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000446s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000497s ]
+
+[ 2016-04-10T12:28:27+08:00 ] 127.0.0.1 /Profile/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 28 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 28 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 28 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 28 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 28 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012832s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012868s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000248s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000270s ]
+
+[ 2016-04-10T12:30:02+08:00 ] 127.0.0.1 /Profile/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 28 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 28 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 28 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 28 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 28 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005744s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000441s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000494s ]
+
+[ 2016-04-10T12:36:33+08:00 ] 127.0.0.1 /Profile/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010983s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011023s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000109s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000320s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000347s ]
+
+[ 2016-04-10T12:38:05+08:00 ] 127.0.0.1 /Profile/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000041s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010774s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010808s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000334s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000374s ]
+
+[ 2016-04-10T13:07:24+08:00 ] 127.0.0.1 /Profile/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000757s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005521s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005553s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000233s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000254s ]
+
+[ 2016-04-10T13:11:05+08:00 ] 127.0.0.1 /Profile/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000240s ]
+SQL: SHOW COLUMNS FROM `yy_users` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yy_users` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yy_users` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-04-10T13:13:35+08:00 ] 127.0.0.1 /Profile/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000040s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+SQL: SHOW COLUMNS FROM `yy_users` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_users` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yy_users` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-04-10T13:13:54+08:00 ] 127.0.0.1 /Profile/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000040s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000247s ]
+SQL: SHOW COLUMNS FROM `yy_users` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_users` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yy_users` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-04-10T13:14:31+08:00 ] 127.0.0.1 /Profile/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000239s ]
+SQL: SHOW COLUMNS FROM `yy_users` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_users` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yy_users` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-04-10T13:15:16+08:00 ] 127.0.0.1 /Profile/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000237s ]
+SQL: SHOW COLUMNS FROM `yy_users` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_users` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yy_users` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-04-10T13:15:28+08:00 ] 127.0.0.1 /Profile/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000211s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000237s ]
+SQL: SHOW COLUMNS FROM `yy_users` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_users` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yy_users` LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2016-04-10T13:16:03+08:00 ] 127.0.0.1 /Profile/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000235s ]
+SQL: SHOW COLUMNS FROM `yy_users` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_users` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yy_users` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-04-10T13:17:12+08:00 ] 127.0.0.1 /Profile/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000211s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000237s ]
+SQL: SHOW COLUMNS FROM `yy_users` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_users` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yy_users` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-04-10T13:18:47+08:00 ] 127.0.0.1 /Profile/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000038s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000255s ]
+SQL: SHOW COLUMNS FROM `yy_users` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yy_users` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yy_users` WHERE `email` = 'conaddd@163.com' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-04-10T13:28:31+08:00 ] 127.0.0.1 /Profile/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000239s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yy_category` WHERE `is_delete` = 0 AND `parent` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yy_users` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yy_users` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yy_users` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-04-10T13:29:52+08:00 ] 127.0.0.1 /Profile/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+SQL: SHOW COLUMNS FROM `yy_users` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_users` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yy_users` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-10T13:30:19+08:00 ] 127.0.0.1 /Profile/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000040s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000246s ]
+SQL: SHOW COLUMNS FROM `yy_users` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_users` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yy_users` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-04-10T13:31:10+08:00 ] 127.0.0.1 /Profile/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000239s ]
+SQL: SHOW COLUMNS FROM `yy_users` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_users` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yy_users` WHERE `email` = 'conaddd@163.com' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-04-10T13:31:44+08:00 ] 127.0.0.1 /Profile/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000040s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000237s ]
+SQL: SHOW COLUMNS FROM `yy_users` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_users` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yy_users` WHERE `email` = 'conaddd@163.com' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-04-10T13:41:30+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/d8973804fdd7dcf730c13ad42da145ed.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/d8973804fdd7dcf730c13ad42da145ed.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/d8973804fdd7dcf730c13ad42da145ed.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/d8973804fdd7dcf730c13ad42da145ed.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/d8973804fdd7dcf730c13ad42da145ed.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/d8973804fdd7dcf730c13ad42da145ed.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006585s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006618s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000449s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000496s ]
+
+[ 2016-04-10T13:43:42+08:00 ] 127.0.0.1 /Profile/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000041s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000267s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/d8973804fdd7dcf730c13ad42da145ed.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/d8973804fdd7dcf730c13ad42da145ed.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/d8973804fdd7dcf730c13ad42da145ed.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/d8973804fdd7dcf730c13ad42da145ed.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/d8973804fdd7dcf730c13ad42da145ed.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/d8973804fdd7dcf730c13ad42da145ed.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010654s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010697s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000405s ]
+
+[ 2016-04-10T13:44:03+08:00 ] 127.0.0.1 /Profile/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000273s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012982s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013015s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000343s ]
+
+[ 2016-04-10T13:44:11+08:00 ] 127.0.0.1 /Profile/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+SQL: SHOW COLUMNS FROM `yy_users` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_users` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yy_users` WHERE `email` = 'conaddd@163.com' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-04-10T14:06:11+08:00 ] 127.0.0.1 /Profile/User.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000293s ]
+
+[ 2016-04-10T14:06:15+08:00 ] 127.0.0.1 /Profile/User.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000290s ]
+
+[ 2016-04-10T14:06:53+08:00 ] 127.0.0.1 /Profile/User/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+
+[ 2016-04-10T14:07:38+08:00 ] 127.0.0.1 /Profile/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+
+[ 2016-04-10T14:08:14+08:00 ] 127.0.0.1 /Profile/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/4c9e4b27c8af016e76176bf4b1229d6f.php 第 18 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/4c9e4b27c8af016e76176bf4b1229d6f.php 第 18 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/4c9e4b27c8af016e76176bf4b1229d6f.php 第 18 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/4c9e4b27c8af016e76176bf4b1229d6f.php 第 18 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/4c9e4b27c8af016e76176bf4b1229d6f.php 第 18 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/4c9e4b27c8af016e76176bf4b1229d6f.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013772s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013829s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000529s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000646s ]
+
+[ 2016-04-10T14:08:14+08:00 ] 127.0.0.1 /Profile/User/images/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+
+[ 2016-04-10T14:10:29+08:00 ] 127.0.0.1 /Profile/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000264s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/4c9e4b27c8af016e76176bf4b1229d6f.php 第 18 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/4c9e4b27c8af016e76176bf4b1229d6f.php 第 18 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/4c9e4b27c8af016e76176bf4b1229d6f.php 第 18 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/4c9e4b27c8af016e76176bf4b1229d6f.php 第 18 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/4c9e4b27c8af016e76176bf4b1229d6f.php 第 18 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/4c9e4b27c8af016e76176bf4b1229d6f.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021473s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021520s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000564s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000636s ]
+
+[ 2016-04-10T14:10:29+08:00 ] 127.0.0.1 /Profile/User/images/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+
+[ 2016-04-10T21:32:33+08:00 ] 127.0.0.1 /Profile/User/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000811s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yy_category` WHERE `is_delete` = 0 AND `parent` = 0  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/d8973804fdd7dcf730c13ad42da145ed.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/d8973804fdd7dcf730c13ad42da145ed.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/d8973804fdd7dcf730c13ad42da145ed.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/d8973804fdd7dcf730c13ad42da145ed.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/d8973804fdd7dcf730c13ad42da145ed.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/d8973804fdd7dcf730c13ad42da145ed.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007986s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008115s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000652s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000702s ]
+
+[ 2016-04-10T21:32:37+08:00 ] 127.0.0.1 /Profile/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000249s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/4c9e4b27c8af016e76176bf4b1229d6f.php 第 18 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/4c9e4b27c8af016e76176bf4b1229d6f.php 第 18 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/4c9e4b27c8af016e76176bf4b1229d6f.php 第 18 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/4c9e4b27c8af016e76176bf4b1229d6f.php 第 18 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/4c9e4b27c8af016e76176bf4b1229d6f.php 第 18 行.
+NOTIC: [8] Undefined variable: id /Users/conan/ht_home/Application/Runtime/Cache/Profile/4c9e4b27c8af016e76176bf4b1229d6f.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010042s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010079s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000360s ]
+
+[ 2016-04-10T21:32:37+08:00 ] 127.0.0.1 /Profile/User/images/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+

@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{ padding:0px; margin:0px}
+body{ margin:0px; padding:0px;}
+header{ width:100%; height:112px; margin-bottom:30px;}
+.headtop{ background-color:#f5f5f5; height:80px; width:100%; min-width:1200px; position: relative;}
+.headtop1{ width:1200px; margin:0px auto;}
+.headlogo{ width:30%; float:left; margin-top:15px;}
+.headsearch{ width:50%; float:left; margin-top:20px;}
+.headsearch input{ width:400px; float:left; height:34px; border:1px solid #E9E9E9; background-color:#FFF; color:#999; padding-left:10px; line-height:34px; font-size:0.8em;}
+.headsearch button{ width:80px; height:34px; border:1px solid #E9E9E9; background-color:#f04848; cursor:pointer; display:inline-block; color:#FFF; font-size:1em;  word-spacing:1em; margin-left:-1px; float:left;}
+.headguanlian{ width:20%; float:left; text-align:right; line-height:80px; font-size:14px; color:#666;}
+
+
+
+.navBarWrap{ width:100%; height:32px; min-width:1200px; background-color:#333;}
+.navBar{ width:1200px; margin:0px auto; line-height:32px;}
+.navBar a{ color:#eee; text-decoration: none; font-size:85%;}
+.navBar a:hover{color:#FFF;}
+.navBar nav{line-height:32px; width:75%; float:left;}
+.navBar nav>a{ padding:0px 25px; color:#eee; float:left;}
+.navBar nav>a:hover{ background-color:#4b4b4b; color:#FFF;}
+.navBar nav>a.active, .navBar nav>a.active:hover {
+	background-color:#f04848;
+	color:#fff;
+}
+
+
+
+.navbaoliao{ width:8%; float:left;}
+.navlogin{ width:17%; float:left; text-align:right; color:#eee;}
+.navlogin>a{ padding:0px 10px;}
+
+
+.clear{ clear:both; overflow:hidden;}
+
+/* 注册登录抬头 */
+
+.fixed{ position:fixed; top:0px; z-index:100;}
+.pertop{position:absolute; top:32px;}
+.persearch{ width:480px; float:right; margin-top:20px; }
+.persearch input{ width:400px; height:34px; float:left; border:1px solid #E9E9E9; background-color:#FFF; color:#999; padding-left:10px; line-height:34px; font-size:0.8em;}
+.persearch button{ width:80px; height:34px; border:1px solid #E9E9E9; background-color:#f04848; cursor:pointer; display:inline-block; color:#FFF; font-size:1em;  word-spacing:1em; margin-left:-1px; float:left;}
+
+
+

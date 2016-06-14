@@ -1,0 +1,256 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 内部导航 */
+
+.searchReslut_nav{cursor: default;
+padding-top: 0px;}
+.searchReslut_nav li {
+	display: block;
+	float:left;
+	padding:0 15px;
+	height:38px;
+	line-height:38px;
+	text-align:center;
+	font-size:13px;
+}
+.searchReslut_nav li a{
+	color:#333;
+	display:inline-block;
+
+	}
+
+.searchReslut_nav li a:hover {
+	color:#333
+}
+.current_nav {
+	border-bottom:2px solid #f04848;
+}
+.other-nav:hover {
+	border-bottom:2px solid #999;
+}
+
+/* 下拉选择 */
+
+.search_div_select {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.select_name {
+    height: 32px;
+    line-height: 32px;
+    background-color: #FFF;
+    color: #666;
+    padding: 0px 26px 0px 14px;
+    cursor: pointer;
+    border: 1px solid #F4F4F4;
+    font-size: 12px;
+}
+.search_select .select_name, .time-select .select_name, .type-select .select_name {
+	width:54px
+}
+
+.search_select, .sort_select, .time-select, .type-select {
+	position:relative;
+	z-index:1;
+	background-color:#fff;
+	border:1px solid #fff;
+	display:inline-block
+}
+.search_select i, .sort_select i, .time-select i, .type-select i {
+    position: absolute;
+    right: 14px;
+    top: 13px;
+    width: 0px;
+    height: 0px;
+    border-style: solid dashed dashed;
+    border-color: #666 transparent transparent;
+    border-width: 4px;
+}
+
+.sub_select {
+	display:none
+}
+
+.sub_select a, .sub_select span {
+	display:block;
+	height:26px;
+	line-height:26px;
+	min-width:56px;
+	color:#666;
+	font-size:12px
+}
+.sub_select span {
+	color:#999
+}
+.sort_select .select_name {
+	width:68px
+}
+
+
+.results-sum {
+	float:right;
+	height:36px;
+	line-height:36px;
+	font-size:12px;
+	color:#a9a9a9
+}
+
+/* 列表 */
+.search-list {
+    height: 132px;
+    padding: 15px 0px;
+}
+
+.search-list-left {
+	border:1px solid #e4e4e4;
+	padding:5px;
+	height:120px;
+	width:120px;
+	float:left;
+	margin-right:25px;
+	overflow:hidden;
+	text-align:center
+}
+.search-list-left span {
+	display:inline-block;
+	height:100%;
+	vertical-align:middle
+}
+.search-list-left img {
+	max-width:100%;
+	vertical-align:middle;
+	max-height:100%
+}
+
+.search-list-right {
+	height:132px;
+	width:700px;
+	float:left;
+	position:relative
+}
+
+
+.list-title {
+	max-height:48px;
+	margin-bottom:10px;
+	overflow:hidden;
+	line-height:24px
+}
+.list-title a {
+	font-size:18px;
+	color:#333
+}
+.list-title a:hover {
+	color:#5188a6
+}
+.list-title a:hover .list-title-price {
+	color:#f78b8b
+}
+.list-title-price {
+	color:#f04848
+}
+.expired a, .expired .list-title-price {
+	color:#999
+}
+.expired a:hover {
+	color:#999
+}
+.list-detail {
+	font-size:14px;
+	color:#999;
+	height:38px
+}
+.list-stuff {
+	position:absolute;
+	bottom:0;
+	height:20px;
+	width:100%
+}
+.list-stuff-left {
+	float:left
+}
+.list-stuff-right {
+	float:right;
+	position:relative;
+	bottom:0
+}
+
+
+.list-tags {
+	width:60px;
+	height:20px;
+	line-height:20px;
+	background-color:#f8f8f8;
+	border-radius:2px;
+	display:inline-block;
+	text-align:center;
+	font-size:12px;
+	margin-right:10px;
+	cursor:default;
+	padding:0 2px
+}
+.tag-channel {
+	color:#797979;
+	cursor:pointer
+}
+.tag-expired {
+	color:#a6a6a6;
+	vertical-align:text-bottom
+}
+.list-time {
+	font-size:12px;
+	color:#999;
+	margin:0 5px
+}
+
+
+.list-evaluate {
+	font-size:12px;
+	color:#999;
+	margin-right:15px
+}
+.list-evaluate number {
+	color:#333;
+}
+.list-evaluate i {
+	font-size:13px;
+	vertical-align:baseline
+}
+
+.list-mall {
+	font-size:12px;
+	color:#333;
+	margin-right:15px
+}
+.list-link {
+	font-size:14px;
+}
+.list-link a {
+	font-size:14px;
+	color:#0071b2
+}
+.list-mark-arrow {
+	font-weight:600;
+	color:#666
+}
+
+.list-line {
+	border-top:1px dashed #e4e4e4
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,88 @@
+<include file="./Public/common/header.html"/>
+<link href="__CSS__/Personal.css" rel="stylesheet" type="text/css" />
+<section class="wrap">
+    <!-- pop-title -->
+    <div class="pop-title">
+        <div class="pop_name">注册<span class="grey">与网友进行讨论及互动；收藏您喜欢的文章和内容；积累积分兑换商家优惠券；爆料并获取金币奖励，兑换礼品</span></div><a href="<?=U('Profile/User/login')?>" class="a_underline">登录</a>    </div>
+    <!-- pop-title end -->
+
+    <!-- pop-content -->
+    <div class="pop-content">
+        <form class="form-content" id="reg_form">
+            <!-- form-item -->
+            <div class="form-item">
+                <div class="item-tip">邮箱</div>
+                <input class="form-input" name="email" value="" tabindex="1" type="text" placeholder="请输入邮箱" >
+                <span class="error"></span>
+            </div>
+            <!-- form-item end -->
+            <!-- form-item -->
+
+            <div class="form-item">
+                <div class="item-tip">密码</div>
+                <input id="password" class="form-input" name="pwd" tabindex="2"  type="password" placeholder="请输入密码">
+                <span style="display:none;" class="error">不能为空</span>
+                <span class="grey">6 - 20位</span>
+            </div>
+            <!-- form-item end -->
+            <!-- form-item -->
+            <div class="form-item">
+                <div class="item-tip">确认密码</div>
+                <input id="password2" class="form-input" name="repwd" tabindex="3" type="password" placeholder="请确认密码">
+                <span class="error"></span>
+            </div>
+            <!-- form-item end -->
+            <!-- form-item -->
+            <div class="form-item">
+                <div class="item-tip">用户昵称</div>
+                <input id="nickname" class="form-input" name="name" value="" tabindex="4" type="text" placeholder="请输入用户昵称">
+                <span class="error"></span>
+                <span class="grey">允许用中英文、数字、下划线，提交后不可修改</span>
+            </div>
+            <!-- form-item end -->
+            <!-- form-item -->
+
+            <div class="captchaBox">
+                <div class="form-item">
+                    <div class="item-tip">验证码</div>
+                    <input class="form-input" name="captcha" autocomplete="off" tabindex="5" type="text" placeholder="请输入验证码">
+                </div>
+                <div class="captcha_imgBox">
+                    <img id="captcha_img" src="/captcha.php?r=<?php echo rand();?>" title="看不清?点击更换" alt="看不清?点击更换">
+                </div>
+                <span class="refresh">看不清?<a href="javascript:void(0);" onclick="document.getElementById('captcha_img').src='/captcha.php?r='+Math.random()" class="a_underline">点击更换</a></span>
+
+            </div>
+
+
+            <div class="twoWeeks"><input class="ckeckBox" checked="checked" tabindex="6" type="checkbox"><label for="agreement">同意"<a href="#" class="a_underline" target="_blank">什么值得买用户使用协议</a>"</label></div>
+
+            <!-- form-item end -->
+            <input class="btn_reg btn_reggreen" value="注&nbsp;&nbsp;册" tabindex="7" onclick="register()" type="button">
+            <p class="notice_error notice_error_300 "></p>
+        </form>
+    </div>
+    <!-- pop-content end -->
+
+</section>
+<script>
+    function register() {
+        $.ajax({
+            url: "<?= U('Profile/User/register') ?>",
+            data: $("#reg_form").serialize(),
+            type: "POST",
+            dataType: "json"
+        }).done(function (result) {
+            $('#captcha_img').attr('src','/captcha.php?r='+Math.random());
+            $(".notice_error").html(result.msg);
+            if(result.status==true){
+                setTimeout(function () {
+                    location.href = "<?= U('Profile/User/login') ?>";
+                }, 2000);
+            }
+
+        })
+
+    }
+</script>
+<include file="./Public/common/footer.html"/>
