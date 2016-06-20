@@ -100,6 +100,22 @@ class UserController extends BaseController
             $data['content'] = $post['editorValue'];
             $data['cover'] = $post['photo'];
             $data['create_time'] = date('Y-m-d H:i:s');
+            if($post['check_source']=='on'){
+                $data['source_name'] =$post['source_name'];
+                $data['source_url'] =$post['source_url'];
+                $data['source_price'] =$post['source_price'];
+            }
+            if(!empty($post['tags'])){
+                $tagModel=D("Home/Tag");
+                $tag_array=explode(',',$post['tags']);
+                for($i=0;$i<count($tag_array);$i++){
+                    $where['tag_name']=$tag_array[$i];
+                   $tag=$tagModel->dbFind($where);
+                    if($tag){
+
+                    }
+                }
+            }
             $r = $article->add($data);
             if ($r) {
                 $this->ajaxReturn(array("status" => 'true'));

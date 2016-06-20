@@ -14,15 +14,15 @@ class BaseController extends Controller
     public function __construct()
     {
         parent::__construct();
-        if(!empty(S('category'))){
-            $this->category=S('category');
-        }
-        else{
-            $category_mode=D('Home/Category');
+//        if(!empty(S('category'))){
+//            $this->category=S('category');
+//        }
+//        else{
+            $categoryMode=D('Home/Category');
             $where=array("is_delete"=>0,"parent"=>0);
-            $this->category=$category_mode->dbSelect($where);
+            $this->category=$categoryMode->dbSelect($where);
             S('category',$this->category,3600);
-        }
+        //}
         if(!empty(S('profile_uid'))&&!empty( S('profile_uname')))
         {
             $this->assign('p_uid',S('profile_uid'));

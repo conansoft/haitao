@@ -17,6 +17,21 @@ section.wrap {
 	line-height:24px;
 	color:#999
 }
+.fabu .source {
+	padding-bottom:10px;
+	position:relative;
+	clear:both;
+	height:36px;
+	margin-bottom:10px;
+	padding-top: 0px;
+
+}
+.fabu .tag {
+
+	border-bottom:1px solid #ccc;
+	height:50px;
+
+}
 .fabu .edit_Tit {
 	padding-bottom:10px;
 	border-bottom:1px solid #ccc;
@@ -313,7 +328,8 @@ font-size:13px;}
 	z-index:99
 }
 .share_Slct li {
-	background-color:#fff
+	background-color:#fff;
+	list-style-type:none;
 }
 .share_Slct li a {
 	line-height:32px;

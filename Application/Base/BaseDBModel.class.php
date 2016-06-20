@@ -30,6 +30,10 @@ class BaseDBModel extends Model {
      */
     public function dbIsExists($where) {
         $pk = $this->Model->getPk();
+        if(!isset($where['is_delete']))
+        {
+            $where['is_delete']=0;
+        }
         $arr = $this->Model->where($where)->field($pk)->select();
         return count($arr) > 0 ? True : FALSE;
     }
@@ -42,6 +46,10 @@ class BaseDBModel extends Model {
      * @return 查询结果
      */
     public function dbFind($where, $field = "*", $order = "") {
+        if(!isset($where['is_delete']))
+        {
+            $where['is_delete']=0;
+        }
         $record = $this->Model->where($where)->field($field)->order($order)->find();
         return $record;
     }
@@ -54,6 +62,10 @@ class BaseDBModel extends Model {
      * @return 查询结果
      */
     public function dbSelect($where, $field = "*", $order = "") {
+        if(!isset($where['is_delete']))
+        {
+            $where['is_delete']=0;
+        }
         $record = $this->Model->where($where)->field($field)->order($order)->select();
         return $record;
     }
@@ -67,6 +79,10 @@ class BaseDBModel extends Model {
      * @return 查询结果
      */
     public function dbSelectTop($where, $limit, $field = "", $order = "") {
+        if(!isset($where['is_delete']))
+        {
+            $where['is_delete']=0;
+        }
         $record = $this->Model->where($where)->field($field)->limit($limit)->order($order)->select();
         return $record;
     }
@@ -78,6 +94,10 @@ class BaseDBModel extends Model {
      * @return 查询结果
      */
     public function dbSelectDistinct($where, $field = "") {
+        if(!isset($where['is_delete']))
+        {
+            $where['is_delete']=0;
+        }
         $record = $this->Model->distinct(true)->where($where)->field($field)->select();
         return $record;
     }
@@ -92,6 +112,10 @@ class BaseDBModel extends Model {
      * @return 查询结果
      */
     public function dbJoin($join, $where = "", $field = "", $order = "", $limit = "") {
+        if(!isset($where['is_delete']))
+        {
+            $where['is_delete']=0;
+        }
         $record = $this->Model->join($join)->where($where)->field($field)->order($order)->limit($limit)->select();
         return $record;
     }
@@ -107,6 +131,10 @@ class BaseDBModel extends Model {
      * @return 分页查询结果
      */
     public function dbPage($page, $perNum, $where, $join = "", $field = "", $order = "") {
+        if(!isset($where['is_delete']))
+        {
+            $where['is_delete']=0;
+        }
         $record = $this->Model->page($page, $perNum)->where($where)->join($join)->field($field)->order($order)->select();
         return $record;
     }
@@ -168,6 +196,10 @@ class BaseDBModel extends Model {
      */
     public function dbCount($where,$Join="") {
         $pk = $this->Model->getPk();
+        if(!isset($where['is_delete']))
+        {
+            $where['is_delete']=0;
+        }
         $record = $this->Model->where($where)->join($Join)->count($pk);
         return $record;
     }
@@ -179,6 +211,10 @@ class BaseDBModel extends Model {
      * @return 
      */
     public function dbMax($where = "", $field = "",$Join="") {
+        if(!isset($where['is_delete']))
+        {
+            $where['is_delete']=0;
+        }
         $record = $this->Model->where($where)->join($Join)->max($field);
         return $record;
     }
@@ -190,6 +226,10 @@ class BaseDBModel extends Model {
      * @return 
      */
     public function dbMin($where = "", $field = "",$Join="") {
+        if(!isset($where['is_delete']))
+        {
+            $where['is_delete']=0;
+        }
         $record = $this->Model->where($where)->join($Join)->min($field);
         return $record;
     }
@@ -200,6 +240,10 @@ class BaseDBModel extends Model {
      * @return 
      */
     public function dbAVG($where = "", $field = "",$Join="") {
+        if(!isset($where['is_delete']))
+        {
+            $where['is_delete']=0;
+        }
         $record = $this->Model->where($where)->join($Join)->avg($field);
         return $record;
     }
@@ -210,6 +254,10 @@ class BaseDBModel extends Model {
      * @return 
      */
     public function dbSum($where = "", $field = "",$Join="") {
+        if(!isset($where['is_delete']))
+        {
+            $where['is_delete']=0;
+        }
         $record = $this->Model->where($where)->join($Join)->sum($field);
         return $record;
     }
@@ -236,6 +284,10 @@ class BaseDBModel extends Model {
     public function dbExecute($sql, $where = "") {
         $Model = new Model();
         if (is_array($where) && count($where) > 0) {
+            if(!isset($where['is_delete']))
+            {
+                $where['is_delete']=0;
+            }
             return $Model->execute($sql, $where);
         } else {
             return $Model->execute($sql);

@@ -1,0 +1,154 @@
+[ 2016-06-20T09:55:50+08:00 ] 127.0.0.1 /Profile/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000447s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yy_category` WHERE `is_delete` = 0 AND `parent` = 0  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006959s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007043s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000603s ]
+
+[ 2016-06-20T09:56:05+08:00 ] 127.0.0.1 /Profile/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000303s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yy_category` WHERE `is_delete` = 0 AND `parent` = 0  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/c82c006290aff218b74788eac421ef53.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006725s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006815s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000380s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000465s ]
+
+[ 2016-06-20T09:56:09+08:00 ] 127.0.0.1 /Profile/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000280s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yy_category` WHERE `is_delete` = 0 AND `parent` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yy_users` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `yy_users` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yy_users` WHERE `email` = 'conan@163.com' AND `is_delete` = 0 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2016-06-20T09:56:57+08:00 ] 127.0.0.1 /Profile/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000332s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yy_category` WHERE `is_delete` = 0 AND `parent` = 0  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yy_users` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `yy_users` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `yy_users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: select id,name,(select count(b.id) from yy_article b where b.category_id=a.id
+        and b.user_id=1 and b.is_delete=0) as count from yy_category a where a.parent=0 and a.is_delete=0 [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yy_article` WHERE `category_id` = 1 AND `is_delete` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yy_article` WHERE `category_id` = 1 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yy_article` WHERE `category_id` = 2 AND `is_delete` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yy_article` WHERE `category_id` = 2 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yy_article` WHERE `category_id` = 3 AND `is_delete` = 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yy_article` WHERE `category_id` = 3 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yy_article` WHERE `category_id` = 4 AND `is_delete` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yy_article` WHERE `category_id` = 4 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yy_article` WHERE `category_id` = 5 AND `is_delete` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yy_article` WHERE `category_id` = 5 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yy_article` WHERE `category_id` = 6 AND `is_delete` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yy_article` WHERE `category_id` = 6 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: select a.id,a.name,a.collect_num,a.like_num from yy_users a,(select user_id from yy_article group by user_id order by count(id) desc limit 5) b where a.id=b.user_id [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000369s ]
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/4c9e4b27c8af016e76176bf4b1229d6f.php 第 19 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/4c9e4b27c8af016e76176bf4b1229d6f.php 第 19 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/4c9e4b27c8af016e76176bf4b1229d6f.php 第 19 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/4c9e4b27c8af016e76176bf4b1229d6f.php 第 19 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/4c9e4b27c8af016e76176bf4b1229d6f.php 第 19 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/4c9e4b27c8af016e76176bf4b1229d6f.php 第 19 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027371s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000378s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000455s ]
+
+[ 2016-06-20T09:57:00+08:00 ] 127.0.0.1 /Profile/User/publish.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yy_category` WHERE `is_delete` = 0 AND `parent` = 0  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yy_category` WHERE `is_delete` = 0  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_country` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `yy_country` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yy_country` WHERE `is_delete` = 0  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/6a94953b8ff696e1992261096226f1ae.php 第 19 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/6a94953b8ff696e1992261096226f1ae.php 第 19 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/6a94953b8ff696e1992261096226f1ae.php 第 19 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/6a94953b8ff696e1992261096226f1ae.php 第 19 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/6a94953b8ff696e1992261096226f1ae.php 第 19 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/6a94953b8ff696e1992261096226f1ae.php 第 19 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013203s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013313s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000711s ]
+
