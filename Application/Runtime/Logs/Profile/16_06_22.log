@@ -1,0 +1,131 @@
+[ 2016-06-22T00:07:50+08:00 ] 127.0.0.1 /Profile/User/publish.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yy_category` WHERE `is_delete` = 0 AND `parent` = 0  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yy_category` WHERE `is_delete` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yy_country` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_country` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `yy_country` WHERE `is_delete` = 0  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/6a94953b8ff696e1992261096226f1ae.php 第 19 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/6a94953b8ff696e1992261096226f1ae.php 第 19 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/6a94953b8ff696e1992261096226f1ae.php 第 19 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/6a94953b8ff696e1992261096226f1ae.php 第 19 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/6a94953b8ff696e1992261096226f1ae.php 第 19 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/6a94953b8ff696e1992261096226f1ae.php 第 19 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011623s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011730s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000164s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000362s ]
+
+[ 2016-06-22T00:07:54+08:00 ] 127.0.0.1 /Profile/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000292s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yy_category` WHERE `is_delete` = 0 AND `parent` = 0  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yy_users` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `yy_users` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `yy_users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: select id,name,(select count(b.id) from yy_article b where b.category_id=a.id
+        and b.user_id=1 and b.is_delete=0) as count from yy_category a where a.parent=0 and a.is_delete=0 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yy_article` WHERE `category_id` = 1 AND `is_delete` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT yy_article.*,yy_country.name as countryName FROM `yy_article` INNER JOIN yy_country on yy_article.country_id=yy_country.id  WHERE `category_id` = '1' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yy_article` WHERE `category_id` = 2 AND `is_delete` = 0 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT yy_article.*,yy_country.name as countryName FROM `yy_article` INNER JOIN yy_country on yy_article.country_id=yy_country.id  WHERE `category_id` = '2' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yy_article` WHERE `category_id` = 3 AND `is_delete` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT yy_article.*,yy_country.name as countryName FROM `yy_article` INNER JOIN yy_country on yy_article.country_id=yy_country.id  WHERE `category_id` = '3' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yy_article` WHERE `category_id` = 4 AND `is_delete` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT yy_article.*,yy_country.name as countryName FROM `yy_article` INNER JOIN yy_country on yy_article.country_id=yy_country.id  WHERE `category_id` = '4' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yy_article` WHERE `category_id` = 5 AND `is_delete` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT yy_article.*,yy_country.name as countryName FROM `yy_article` INNER JOIN yy_country on yy_article.country_id=yy_country.id  WHERE `category_id` = '5' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yy_article` WHERE `category_id` = 6 AND `is_delete` = 0 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT yy_article.*,yy_country.name as countryName FROM `yy_article` INNER JOIN yy_country on yy_article.country_id=yy_country.id  WHERE `category_id` = '6' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: select a.id,a.name,a.collect_num,a.like_num from yy_users a,(select user_id from yy_article group by user_id order by count(id) desc limit 5) b where a.id=b.user_id [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000283s ]
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/4c9e4b27c8af016e76176bf4b1229d6f.php 第 19 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/4c9e4b27c8af016e76176bf4b1229d6f.php 第 19 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/4c9e4b27c8af016e76176bf4b1229d6f.php 第 19 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/4c9e4b27c8af016e76176bf4b1229d6f.php 第 19 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/4c9e4b27c8af016e76176bf4b1229d6f.php 第 19 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/4c9e4b27c8af016e76176bf4b1229d6f.php 第 19 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016782s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016870s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000519s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000632s ]
+
+[ 2016-06-22T00:09:23+08:00 ] 127.0.0.1 /Profile/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yy_category` WHERE `is_delete` = 0 AND `parent` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yy_users` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `yy_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yy_users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: select id,name,(select count(b.id) from yy_article b where b.category_id=a.id
+        and b.user_id=1 and b.is_delete=0) as count from yy_category a where a.parent=0 and a.is_delete=0 [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yy_article` WHERE `category_id` = 1 AND `is_delete` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT yy_article.*,yy_country.name as countryName FROM `yy_article` INNER JOIN yy_country on yy_article.country_id=yy_country.id  WHERE `category_id` = '1' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yy_article` WHERE `category_id` = 2 AND `is_delete` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT yy_article.*,yy_country.name as countryName FROM `yy_article` INNER JOIN yy_country on yy_article.country_id=yy_country.id  WHERE `category_id` = '2' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yy_article` WHERE `category_id` = 3 AND `is_delete` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT yy_article.*,yy_country.name as countryName FROM `yy_article` INNER JOIN yy_country on yy_article.country_id=yy_country.id  WHERE `category_id` = '3' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yy_article` WHERE `category_id` = 4 AND `is_delete` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT yy_article.*,yy_country.name as countryName FROM `yy_article` INNER JOIN yy_country on yy_article.country_id=yy_country.id  WHERE `category_id` = '4' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yy_article` WHERE `category_id` = 5 AND `is_delete` = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT yy_article.*,yy_country.name as countryName FROM `yy_article` INNER JOIN yy_country on yy_article.country_id=yy_country.id  WHERE `category_id` = '5' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yy_article` WHERE `category_id` = 6 AND `is_delete` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT yy_article.*,yy_country.name as countryName FROM `yy_article` INNER JOIN yy_country on yy_article.country_id=yy_country.id  WHERE `category_id` = '6' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: select a.id,a.name,a.collect_num,a.like_num from yy_users a,(select user_id from yy_article group by user_id order by count(id) desc limit 5) b where a.id=b.user_id [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/4c9e4b27c8af016e76176bf4b1229d6f.php 第 19 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/4c9e4b27c8af016e76176bf4b1229d6f.php 第 19 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/4c9e4b27c8af016e76176bf4b1229d6f.php 第 19 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/4c9e4b27c8af016e76176bf4b1229d6f.php 第 19 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/4c9e4b27c8af016e76176bf4b1229d6f.php 第 19 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Profile/4c9e4b27c8af016e76176bf4b1229d6f.php 第 19 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013165s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013256s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000540s ]
+

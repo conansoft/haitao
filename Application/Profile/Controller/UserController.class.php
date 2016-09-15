@@ -100,26 +100,41 @@ class UserController extends BaseController
             $data['content'] = $post['editorValue'];
             $data['cover'] = $post['photo'];
             $data['create_time'] = date('Y-m-d H:i:s');
-            if($post['check_source']=='on'){
-                $data['source_name'] =$post['source_name'];
-                $data['source_url'] =$post['source_url'];
-                $data['source_price'] =$post['source_price'];
+            if ($post['check_source'] == 'on') {
+                $data['source_name'] = $post['source_name'];
+                $data['source_url'] = $post['source_url'];
+                $data['source_price'] = $post['source_price'];
             }
-            if(!empty($post['tags'])){
-                $tagModel=D("Home/Tag");
-                $tag_array=explode(',',$post['tags']);
-                for($i=0;$i<count($tag_array);$i++){
-                    $where['tag_name']=$tag_array[$i];
-                   $tag=$tagModel->dbFind($where);
-                    if($tag){
-
+            $article->startTrans();
+            $r = $article->add($data);
+            $newId = $article->getLastInsID();
+            if ($r && !empty($post['tags'])) {
+                $tagModel = D("Home/Tag");
+                $articleTagModel = D("Home/ArticleTag");
+                $tag_array = explode(',', $post['tags']);
+                for ($i = 0; $i < count($tag_array); $i++) {
+                    $where['tag_name'] = $tag_array[$i];
+                    $tag = $tagModel->dbFind($where);
+                    if ($tag) {
+                        $at = $articleTagModel->add(["article_id" => $newId, "tag_id" => $tag["id"]]);
+                        $r = $at ? $r : false;
+                    } else {
+                        $tag = $tagModel->add(['tag_name' => $tag_array[$i]]);
+                        $tagId = $tagModel->getLastInsID();
+                        if ($tag) {
+                            $at =$articleTagModel->add(["article_id" => $newId, "tag_id" => $tagId]);
+                            $r = $at ? $r : false;
+                        }else{
+                            $r=false;
+                        }
                     }
                 }
             }
-            $r = $article->add($data);
             if ($r) {
+                $article->commit();
                 $this->ajaxReturn(array("status" => 'true'));
             } else {
+                $article->rollback();
                 $this->ajaxReturn(array("status" => 'false', 'message' => '保存失败'));
             }
         } else {

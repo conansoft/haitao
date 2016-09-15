@@ -1,0 +1,181 @@
+<include file="./Public/common/header.html"/>
+
+<link href="__CSS__/content.css" rel="stylesheet" type="text/css"/>
+<link href="__CSS__/list.css" rel="stylesheet" type="text/css"/>
+<link href="__CSS__/icon.css" rel="stylesheet" type="text/css"/>
+<link href="__CSS__/pagination.css" rel="stylesheet" type="text/css"/>
+<section>
+    <div class="section">
+        <div class="leftwrap">
+
+            <div class="search_div_select">
+                <!--search_select-->
+                <select id="match">
+                    <option value="">匹配模式</option>
+                    <option value="title">匹配标题</option>
+                    <option value="content">匹配正文</option>
+                </select>
+                <select id="sort">
+                    <option>排序模式</option>
+                    <option value="desc">最新发布</option>
+                    <option value="asc">最久发布</option>
+                </select>
+                <select id="times">
+                    <option>搜索时间</option>
+                    <option value="week">一周内</option>
+                    <option value="month">一月内</option>
+                    <option value="year">一年内</option>
+                </select>
+
+                <!--sort_select end-->
+
+                <?php $kw=I('get.kw');
+                if(!empty($kw)){
+                $count=count($articleList); ?>
+                <span class="results-sum">为您找到相关结果约{$count}个</span></div>
+            <?php } ?>
+
+
+            <!--search-list-->
+            <volist name="articleList.data" id="article">
+                <div class="search-list">
+                    <div class="search-list-left"><a href="/Article/detail/id/{$article.id}" target="_blank" title="">
+                        <img src="{$article.cover}" alt=""></a></div>
+                    <div class="search-list-right">
+                        <div class="list-title"><a href="/Article/detail/id/{$article.id}" target="_blank" title="">{$article.title}
+                            <span class="list-title-price">{$article.source_price}</span></a></div>
+                        <div class="list-detail">
+                            <?php echo(strLL($article['content'],50)); ?>
+                        </div>
+                        <div class="lrBot">
+                            <a data-id="{$article.id}" href="javascript:void(0)" class="good">
+                            <span class="scoreTotal"><b>值</b>
+                            <em>{$article.worth}</em></span>
+                                <span class="scoredInfo" setGood="{$article.setGood}">已打分</span>
+                                <span class="scoreAnimate">+1</span>
+                            </a>
+                            <a data-id="{$article.id}" href="javascript:void(0)" class="bad">
+                                <span class="scoreTotal">不值 <em>{$article.not_worth}</em></span>
+                                <span class="scoredInfo" setGood="{$article.setGood}">已打分</span>
+                                <span class="scoreAnimate">+1</span>
+                            </a>
+                            <a data-id="{$article.id}" href="javascript:void(0)" class="fav" title="收藏">
+                                <i class="icon-collect"></i><em>{$article.collect_num}</em></a>
+                            <a href="#" class="comment" title="评论" target="_blank">
+                                <i class="icon-comment"></i><em>{$article.comment_num}</em></a>
+                            <if condition="!empty($article['source_url'])">
+                                <div class="botPart">
+                                    <div class="buy"><a href="{$article.source_url}" target="_blank">直达链接<i>&gt;</i></a>
+                                    </div>
+                                    <a href="#" class="mall">{$article.source_name}</a></div>
+                            </if>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-line"></div>
+            </volist>
+
+
+            <!--page-->
+            <div class="clear"></div>
+            <div class="green-black"> {$articleList['page']}</div>
+        </div>
+
+
+    </div>
+    </div>
+    <div class="clear"></div>
+</section>
+<script>
+    $(function () {
+        $('.page').live('click', function () {
+            var url = $(this).data('href');
+            location.href = url;
+        });
+        $('.good').live('click', function () {
+            var pid = $(this).data('id');
+            $a = $(this);
+            $.ajax({
+                url: "/Ajax/isWorth",
+                data: {pid: pid, worth: 1},
+                type: 'POST',
+                dataType: 'json',
+                success: function (msg) {
+                    if (msg.status == 1) {
+                        $a.find('.scoreAnimate').show(500).hide(500);
+                        setTimeout(function () {
+                            var i = $a.find('em').html();
+                            $a.find('em').html(parseFloat(i) + 1);
+                            $a.parent('.lrBot').find('.scoredInfo').attr('setGood', '1');
+                        }, 1000);
+
+                    }
+                },
+                error: function (ret) {
+                    alert(ret.responseText);
+                }
+            });
+        }).hover(function () {
+            var set = $(this).find('.scoredInfo').attr('setGood');
+            if (set == 1) {
+                $(this).find('.scoredInfo').show();
+            }
+        }, function () {
+            $(this).find('.scoredInfo').hide();
+        });
+        $('.bad').live('click', function () {
+            var pid = $(this).data('id');
+            $a = $(this);
+            $.ajax({
+                url: "/Ajax/isWorth",
+                data: {pid: pid, worth: 0},
+                type: 'POST',
+                dataType: 'json',
+                success: function (msg) {
+                    if (msg.status == 1) {
+                        $a.find('.scoreAnimate').show(500).hide(500);
+                        setTimeout(function () {
+                            var i = $a.find('em').html();
+                            $a.find('em').html(parseFloat(i) + 1);
+                            $a.parent('.lrBot').find('.scoredInfo').attr('setGood', '1');
+                        }, 1000);
+                    }
+                },
+                error: function (ret) {
+                    alert(ret.responseText);
+                }
+            });
+        }).hover(function () {
+            var set = $(this).find('.scoredInfo').attr('setGood');
+            if (set == 1) {
+                $(this).find('.scoredInfo').show();
+            }
+        }, function () {
+            $(this).find('.scoredInfo').hide();
+        });
+        $('.fav').live('click', function () {
+            var pid = $(this).data('id');
+            $a = $(this);
+            $.ajax({
+                url: "/Ajax/collect",
+                data: {pid: pid},
+                type: 'POST',
+                dataType: 'json',
+                success: function (msg) {
+                    if (msg.status == 1) {
+                        var i = $a.find('em').html();
+                        $a.find('em').html(parseFloat(i) + 1);
+                    }
+                    else {
+                        alert(msg.msg);
+                    }
+                },
+                error: function (ret) {
+                    alert(ret.responseText);
+                }
+            });
+        });
+    })
+</script>
+<include file="./Public/common/footer.html"/>

@@ -15,8 +15,8 @@
         <div class="headtop1">
             <div class="headlogo"><a href="#"><img src="__IMG__/logo.png" width="159" height="50" /></a></div>
             <div class="headsearch">
-                <form>
-                    <input value="请输入您要的东西" type="search" />
+                <form action="<?= U('Home/Article/alist') ?>">
+                    <input placeholder="请输入您要的东西" type="search" name="kw"/>
                     <button type="submit" value="search">搜索</button>
                 </form>
             </div>

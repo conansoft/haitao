@@ -1,0 +1,760 @@
+[ 2016-06-27T23:03:09+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0109s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yy_category` WHERE `is_delete` = 0 AND `parent` = 0  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `yy_product_type` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `yy_product_type` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_article_tag` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `yy_article_tag` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yy_product_type` WHERE `parent_id` = 0 AND `is_delete` = 0  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yy_product_type` WHERE `parent_id` = 0 AND `hot` = 1 AND `is_delete` = 0  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `yy_article` WHERE `product_type_id` = 1 AND `is_delete` = 0 ORDER BY id desc LIMIT 6   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yy_article` WHERE `product_type_id` = 2 AND `is_delete` = 0 ORDER BY id desc LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yy_article` WHERE `product_type_id` = 3 AND `is_delete` = 0 ORDER BY id desc LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yy_article` WHERE `product_type_id` = 4 AND `is_delete` = 0 ORDER BY id desc LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yy_article` WHERE `product_type_id` = 5 AND `is_delete` = 0 ORDER BY id desc LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yy_article` WHERE `product_type_id` = 6 AND `is_delete` = 0 ORDER BY id desc LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yy_article` WHERE `is_delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT yy_article.*,yy_country.name as countryName FROM `yy_article` INNER JOIN yy_country on yy_article.country_id=yy_country.id  ORDER BY id desc LIMIT 0,10   [ RunTime:0.0023s ]
+SQL: SELECT yy_tag.tag_name FROM `yy_article_tag` INNER JOIN yy_tag on yy_article_tag.tag_id=yy_tag.id  WHERE yy_article_tag.article_id = '25'  [ RunTime:0.0012s ]
+SQL: SELECT yy_tag.tag_name FROM `yy_article_tag` INNER JOIN yy_tag on yy_article_tag.tag_id=yy_tag.id  WHERE yy_article_tag.article_id = '24'  [ RunTime:0.0003s ]
+SQL: SELECT yy_tag.tag_name FROM `yy_article_tag` INNER JOIN yy_tag on yy_article_tag.tag_id=yy_tag.id  WHERE yy_article_tag.article_id = '21'  [ RunTime:0.0002s ]
+SQL: SELECT yy_tag.tag_name FROM `yy_article_tag` INNER JOIN yy_tag on yy_article_tag.tag_id=yy_tag.id  WHERE yy_article_tag.article_id = '20'  [ RunTime:0.0002s ]
+SQL: SELECT yy_tag.tag_name FROM `yy_article_tag` INNER JOIN yy_tag on yy_article_tag.tag_id=yy_tag.id  WHERE yy_article_tag.article_id = '19'  [ RunTime:0.0002s ]
+SQL: SELECT yy_tag.tag_name FROM `yy_article_tag` INNER JOIN yy_tag on yy_article_tag.tag_id=yy_tag.id  WHERE yy_article_tag.article_id = '18'  [ RunTime:0.0002s ]
+SQL: SELECT yy_tag.tag_name FROM `yy_article_tag` INNER JOIN yy_tag on yy_article_tag.tag_id=yy_tag.id  WHERE yy_article_tag.article_id = '17'  [ RunTime:0.0001s ]
+SQL: SELECT yy_tag.tag_name FROM `yy_article_tag` INNER JOIN yy_tag on yy_article_tag.tag_id=yy_tag.id  WHERE yy_article_tag.article_id = '16'  [ RunTime:0.0001s ]
+SQL: SELECT yy_tag.tag_name FROM `yy_article_tag` INNER JOIN yy_tag on yy_article_tag.tag_id=yy_tag.id  WHERE yy_article_tag.article_id = '15'  [ RunTime:0.0001s ]
+SQL: SELECT yy_tag.tag_name FROM `yy_article_tag` INNER JOIN yy_tag on yy_article_tag.tag_id=yy_tag.id  WHERE yy_article_tag.article_id = '14'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000333s ]
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060515s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060603s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000700s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000869s ]
+
+[ 2016-06-27T23:03:09+08:00 ] 127.0.0.1 /Public/images/image1.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+
+[ 2016-06-27T23:03:09+08:00 ] 127.0.0.1 /Public/images/image2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+
+[ 2016-06-27T23:03:09+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+
+[ 2016-06-27T23:03:29+08:00 ] 127.0.0.1 /Article/alist/t/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000327s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yy_category` WHERE `is_delete` = 0 AND `parent` = 0  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yy_article` WHERE `category_id` = 2 AND `title` LIKE '%%' AND `is_delete` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT yy_article.*,yy_country.name as countryName FROM `yy_article` INNER JOIN yy_country on yy_article.country_id=yy_country.id  WHERE `category_id` = '2' AND `title` LIKE '%%' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011491s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000486s ]
+
+[ 2016-06-27T23:03:32+08:00 ] 127.0.0.1 /Article/alist/t/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yy_category` WHERE `is_delete` = 0 AND `parent` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yy_article` WHERE `category_id` = 3 AND `title` LIKE '%%' AND `is_delete` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT yy_article.*,yy_country.name as countryName FROM `yy_article` INNER JOIN yy_country on yy_article.country_id=yy_country.id  WHERE `category_id` = '3' AND `title` LIKE '%%' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 29 行.
+NOTIC: [2] substr() expects at most 3 parameters, 4 given /Users/conan/haitao/Application/Common/Common/function.php 第 569 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009716s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009782s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000462s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000608s ]
+
+[ 2016-06-27T23:03:34+08:00 ] 127.0.0.1 /Article/alist/t/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000878s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yy_category` WHERE `is_delete` = 0 AND `parent` = 0  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yy_article` WHERE `category_id` = 3 AND `title` LIKE '%%' AND `is_delete` = 0 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT yy_article.*,yy_country.name as countryName FROM `yy_article` INNER JOIN yy_country on yy_article.country_id=yy_country.id  WHERE `category_id` = '3' AND `title` LIKE '%%' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 29 行.
+NOTIC: [2] substr() expects at most 3 parameters, 4 given /Users/conan/haitao/Application/Common/Common/function.php 第 569 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011595s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011662s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000164s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000457s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000539s ]
+
+[ 2016-06-27T23:03:41+08:00 ] 127.0.0.1 /Article/detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yy_category` WHERE `is_delete` = 0 AND `parent` = 0  [ RunTime:0.0002s ]
+ERR: 参数错误或者未定义:id
+
+[ 2016-06-27T23:03:46+08:00 ] 127.0.0.1 /Article/detail/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yy_category` WHERE `is_delete` = 0 AND `parent` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_article_tag` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yy_article_tag` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yy_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT yy_tag.tag_name FROM `yy_article_tag` INNER JOIN yy_tag on yy_article_tag.tag_id=yy_tag.id  WHERE yy_article_tag.article_id = '1'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000588s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000682s ]
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028268s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028340s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000752s ]
+
+[ 2016-06-27T23:03:47+08:00 ] 127.0.0.1 /Public/img/sloganLogo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+
+[ 2016-06-27T23:04:44+08:00 ] 127.0.0.1 /Article/detail/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000596s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `yy_category` WHERE `is_delete` = 0 AND `parent` = 0  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `yy_article_tag` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `yy_article_tag` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `yy_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT yy_tag.tag_name FROM `yy_article_tag` INNER JOIN yy_tag on yy_article_tag.tag_id=yy_tag.id  WHERE yy_article_tag.article_id = '1'  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000756s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000917s ]
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049937s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050106s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000489s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000607s ]
+
+[ 2016-06-27T23:04:45+08:00 ] 127.0.0.1 /Public/img/sloganLogo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000142s ]
+
+[ 2016-06-27T23:40:46+08:00 ] 127.0.0.1 /Article/alist/t/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yy_category` WHERE `is_delete` = 0 AND `parent` = 0  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yy_article` WHERE `category_id` = 3 AND `title` LIKE '%%' AND `is_delete` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT yy_article.*,yy_country.name as countryName FROM `yy_article` INNER JOIN yy_country on yy_article.country_id=yy_country.id  WHERE `category_id` = '3' AND `title` LIKE '%%' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000317s ]
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 29 行.
+NOTIC: [2] substr() expects at most 3 parameters, 4 given /Users/conan/haitao/Application/Common/Common/function.php 第 569 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011890s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011961s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000605s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000695s ]
+
+[ 2016-06-27T23:40:48+08:00 ] 127.0.0.1 /Article/detail/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yy_category` WHERE `is_delete` = 0 AND `parent` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yy_article_tag` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_article_tag` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yy_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT yy_tag.tag_name FROM `yy_article_tag` INNER JOIN yy_tag on yy_article_tag.tag_id=yy_tag.id  WHERE yy_article_tag.article_id = '1'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000640s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000789s ]
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Use of undefined constant source_price - assumed 'source_price' /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 63 行.
+NOTIC: [8] Array to string conversion /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 63 行.
+NOTIC: [8] Undefined index: add_time /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 65 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031417s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031536s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000576s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000701s ]
+
+[ 2016-06-27T23:40:49+08:00 ] 127.0.0.1 /Public/img/sloganLogo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000146s ]
+
+[ 2016-06-27T23:44:54+08:00 ] 127.0.0.1 /Article/detail/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000565s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yy_category` WHERE `is_delete` = 0 AND `parent` = 0  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `yy_article_tag` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `yy_article_tag` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `yy_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT yy_tag.tag_name FROM `yy_article_tag` INNER JOIN yy_tag on yy_article_tag.tag_id=yy_tag.id  WHERE yy_article_tag.article_id = '1'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000676s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000841s ]
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Use of undefined constant source_price - assumed 'source_price' /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 63 行.
+NOTIC: [8] Array to string conversion /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 63 行.
+NOTIC: [8] Use of undefined constant source_name - assumed 'source_name' /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 66 行.
+NOTIC: [8] Array to string conversion /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040013s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040113s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000794s ]
+
+[ 2016-06-27T23:44:55+08:00 ] 127.0.0.1 /Public/img/sloganLogo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+
+[ 2016-06-27T23:47:16+08:00 ] 127.0.0.1 /Article/detail/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yy_category` WHERE `is_delete` = 0 AND `parent` = 0  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_article_tag` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_article_tag` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yy_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT yy_tag.tag_name FROM `yy_article_tag` INNER JOIN yy_tag on yy_article_tag.tag_id=yy_tag.id  WHERE yy_article_tag.article_id = '1'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000410s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000508s ]
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Use of undefined constant source_price - assumed 'source_price' /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 63 行.
+NOTIC: [8] Array to string conversion /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 63 行.
+NOTIC: [8] Use of undefined constant source_name - assumed 'source_name' /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 66 行.
+NOTIC: [8] Array to string conversion /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 66 行.
+NOTIC: [8] Use of undefined constant source_url - assumed 'source_url' /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 73 行.
+NOTIC: [8] Array to string conversion /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034907s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000547s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000678s ]
+
+[ 2016-06-27T23:47:17+08:00 ] 127.0.0.1 /Public/img/sloganLogo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+
+[ 2016-06-27T23:49:17+08:00 ] 127.0.0.1 /Article/detail/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yy_category` WHERE `is_delete` = 0 AND `parent` = 0  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `yy_article_tag` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yy_article_tag` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yy_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT yy_tag.tag_name FROM `yy_article_tag` INNER JOIN yy_tag on yy_article_tag.tag_id=yy_tag.id  WHERE yy_article_tag.article_id = '1'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000545s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000693s ]
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Use of undefined constant source_price - assumed 'source_price' /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 63 行.
+NOTIC: [8] Array to string conversion /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 63 行.
+NOTIC: [8] Use of undefined constant source_name - assumed 'source_name' /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 66 行.
+NOTIC: [8] Array to string conversion /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 66 行.
+NOTIC: [8] Use of undefined constant source_url - assumed 'source_url' /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 73 行.
+NOTIC: [8] Array to string conversion /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051453s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051577s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001271s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001893s ]
+
+[ 2016-06-27T23:49:18+08:00 ] 127.0.0.1 /Public/img/sloganLogo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+
+[ 2016-06-27T23:49:22+08:00 ] 127.0.0.1 /Article/detail/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yy_category` WHERE `is_delete` = 0 AND `parent` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yy_article_tag` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yy_article_tag` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yy_article` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT yy_tag.tag_name FROM `yy_article_tag` INNER JOIN yy_tag on yy_article_tag.tag_id=yy_tag.id  WHERE yy_article_tag.article_id = '2'  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000397s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000473s ]
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Use of undefined constant source_price - assumed 'source_price' /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 63 行.
+NOTIC: [8] Array to string conversion /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 63 行.
+NOTIC: [8] Use of undefined constant source_name - assumed 'source_name' /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 66 行.
+NOTIC: [8] Array to string conversion /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 66 行.
+NOTIC: [8] Use of undefined constant source_url - assumed 'source_url' /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 73 行.
+NOTIC: [8] Array to string conversion /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028233s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028330s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000189s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000585s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000874s ]
+
+[ 2016-06-27T23:49:22+08:00 ] 127.0.0.1 /Public/img/sloganLogo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+
+[ 2016-06-27T23:50:11+08:00 ] 127.0.0.1 /Article/detail/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000290s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yy_category` WHERE `is_delete` = 0 AND `parent` = 0  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yy_article_tag` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yy_article_tag` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yy_article` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT yy_tag.tag_name FROM `yy_article_tag` INNER JOIN yy_tag on yy_article_tag.tag_id=yy_tag.id  WHERE yy_article_tag.article_id = '2'  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000379s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000455s ]
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Use of undefined constant source_price - assumed 'source_price' /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 63 行.
+NOTIC: [8] Array to string conversion /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 63 行.
+NOTIC: [8] Use of undefined constant source_name - assumed 'source_name' /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 66 行.
+NOTIC: [8] Array to string conversion /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 66 行.
+NOTIC: [8] Use of undefined constant source_url - assumed 'source_url' /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 73 行.
+NOTIC: [8] Array to string conversion /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031853s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031938s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000841s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001090s ]
+
+[ 2016-06-27T23:50:12+08:00 ] 127.0.0.1 /Public/img/sloganLogo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000144s ]
+
+[ 2016-06-27T23:51:51+08:00 ] 127.0.0.1 /Article/detail/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yy_category` WHERE `is_delete` = 0 AND `parent` = 0  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `yy_article_tag` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `yy_article_tag` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yy_article` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT yy_tag.tag_name FROM `yy_article_tag` INNER JOIN yy_tag on yy_article_tag.tag_id=yy_tag.id  WHERE yy_article_tag.article_id = '2'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000307s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000450s ]
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Use of undefined constant source_price - assumed 'source_price' /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 63 行.
+NOTIC: [8] Array to string conversion /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 63 行.
+NOTIC: [8] Use of undefined constant source_name - assumed 'source_name' /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 66 行.
+NOTIC: [8] Array to string conversion /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 66 行.
+NOTIC: [8] Use of undefined constant source_url - assumed 'source_url' /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 73 行.
+NOTIC: [8] Array to string conversion /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039025s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039133s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000522s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000643s ]
+
+[ 2016-06-27T23:51:52+08:00 ] 127.0.0.1 /Public/img/sloganLogo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000141s ]
+
+[ 2016-06-27T23:58:05+08:00 ] 127.0.0.1 /Article/detail/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yy_category` WHERE `is_delete` = 0 AND `parent` = 0  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `yy_article_tag` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `yy_article_tag` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yy_article` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT yy_tag.tag_name FROM `yy_article_tag` INNER JOIN yy_tag on yy_article_tag.tag_id=yy_tag.id  WHERE yy_article_tag.article_id = '2'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000371s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000547s ]
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Use of undefined constant source_price - assumed 'source_price' /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 63 行.
+NOTIC: [8] Array to string conversion /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 63 行.
+NOTIC: [8] Use of undefined constant source_name - assumed 'source_name' /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 66 行.
+NOTIC: [8] Array to string conversion /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 66 行.
+NOTIC: [8] Use of undefined constant source_url - assumed 'source_url' /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 73 行.
+NOTIC: [8] Array to string conversion /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046524s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046645s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000523s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000691s ]
+
+[ 2016-06-27T23:58:57+08:00 ] 127.0.0.1 /Article/detail/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yy_category` WHERE `is_delete` = 0 AND `parent` = 0  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yy_article_tag` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_article_tag` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yy_article` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT yy_tag.tag_name FROM `yy_article_tag` INNER JOIN yy_tag on yy_article_tag.tag_id=yy_tag.id  WHERE yy_article_tag.article_id = '2'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000425s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000572s ]
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Use of undefined constant source_price - assumed 'source_price' /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 64 行.
+NOTIC: [8] Array to string conversion /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 64 行.
+NOTIC: [8] Use of undefined constant source_name - assumed 'source_name' /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 67 行.
+NOTIC: [8] Array to string conversion /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 67 行.
+NOTIC: [8] Use of undefined constant source_url - assumed 'source_url' /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 75 行.
+NOTIC: [8] Array to string conversion /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 75 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037464s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037555s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000558s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000696s ]
+
+[ 2016-06-27T23:58:59+08:00 ] 127.0.0.1 /Article/detail/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000301s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yy_category` WHERE `is_delete` = 0 AND `parent` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yy_article_tag` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yy_article_tag` [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yy_article` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT yy_tag.tag_name FROM `yy_article_tag` INNER JOIN yy_tag on yy_article_tag.tag_id=yy_tag.id  WHERE yy_article_tag.article_id = '2'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001427s ]
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Use of undefined constant source_price - assumed 'source_price' /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 64 行.
+NOTIC: [8] Array to string conversion /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 64 行.
+NOTIC: [8] Use of undefined constant source_name - assumed 'source_name' /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 67 行.
+NOTIC: [8] Array to string conversion /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 67 行.
+NOTIC: [8] Use of undefined constant source_url - assumed 'source_url' /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 75 行.
+NOTIC: [8] Array to string conversion /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 75 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031024s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031089s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000560s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000726s ]
+
+[ 2016-06-27T23:59:35+08:00 ] 127.0.0.1 /Article/detail/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yy_category` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yy_category` WHERE `is_delete` = 0 AND `parent` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `yy_article` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_article_tag` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yy_article_tag` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yy_article` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT yy_tag.tag_name FROM `yy_article_tag` INNER JOIN yy_tag on yy_article_tag.tag_id=yy_tag.id  WHERE yy_article_tag.article_id = '2'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000362s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000435s ]
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Undefined variable: id /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 29 行.
+NOTIC: [8] Use of undefined constant source_price - assumed 'source_price' /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 64 行.
+NOTIC: [8] Array to string conversion /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 64 行.
+NOTIC: [8] Use of undefined constant source_name - assumed 'source_name' /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 67 行.
+NOTIC: [8] Array to string conversion /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 67 行.
+NOTIC: [8] Use of undefined constant source_url - assumed 'source_url' /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 75 行.
+NOTIC: [8] Array to string conversion /Users/conan/haitao/Application/Runtime/Cache/Home/3c8a1a47a3534a7b1252c226abfc3928.php 第 75 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021799s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021867s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000401s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000510s ]
+

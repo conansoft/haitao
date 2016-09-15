@@ -7,6 +7,7 @@
  */
 
 namespace Home\Model;
+use  Base\BaseDBModel;
 
 
 class TagModel extends BaseDBModel

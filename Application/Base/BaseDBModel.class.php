@@ -78,7 +78,7 @@ class BaseDBModel extends Model {
      * @param $order  排序
      * @return 查询结果
      */
-    public function dbSelectTop($where, $limit, $field = "", $order = "") {
+    public function dbSelectTop($where, $limit, $field = "*", $order = "id desc") {
         if(!isset($where['is_delete']))
         {
             $where['is_delete']=0;

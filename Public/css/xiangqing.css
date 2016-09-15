@@ -3582,7 +3582,7 @@ article .voteBut:hover,.comment_baoming {
 	-o-border-radius:2px;
 	border-radius:2px;
 	font-size:14px;
-	float:right;
+	float:left;
 	cursor:pointer
 }
 .comment_operate .btn_subGrey,.btn_grey {

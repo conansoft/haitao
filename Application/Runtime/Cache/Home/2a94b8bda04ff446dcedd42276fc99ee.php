@@ -16,7 +16,7 @@
             <div class="headlogo"><a href="#"><img src="/Public/images/logo.png" width="159" height="50" /></a></div>
             <div class="headsearch">
                 <form>
-                    <input value="请输入您要的东西" type="search" />
+                    <input placeholder="请输入您要的东西" type="search" />
                     <button type="submit" value="search">搜索</button>
                 </form>
             </div>
@@ -43,226 +43,219 @@
     </div>
     <div class="clear"></div>
 </header>
-<link href="/Public/css/content.css" rel="stylesheet" type="text/css" />
-<link href="/Public/css/icon.css" rel="stylesheet" type="text/css" />
+<link href="/Public/css/content.css" rel="stylesheet" type="text/css"/>
+<link href="/Public/css/icon.css" rel="stylesheet" type="text/css"/>
+<link href="/Public/css/pagination.css" rel="stylesheet" type="text/css"/>
 <section>
-<div class="section">
-  <div class="leftwrap">
-    <div class="leftguanggao"></div>
+    <div class="section">
+        <div class="leftwrap">
+            <div class="leftguanggao"></div>
 
-    <div class="jierihuod">
-      <div class="value_tags"> <a><img style="width: 50px" src="/Public/images/richang.png"/></a> <a href="#" target="_blank">服饰鞋包</a> <a href="#" target="_blank">运动户外</a> <a href="#" target="_blank">电脑数码</a> <a href="#" target="_blank">家用电器</a> <a href="#" target="_blank">食品保健</a> <a href="#" target="_blank">日用百货</a> </div>
-      <ul class="shangppin">
+            <div class="jierihuod">
+                <div class="value_tags"><a><img style="width: 50px" src="/Public/images/richang.png"/></a>
+                    <?php if(is_array($hotTypes)): $i = 0; $__LIST__ = $hotTypes;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$hotType): $mod = ($i % 2 );++$i;?><a class="hot_type" href="javascript:void(0)" data-id="<?php echo ($hotType["id"]); ?>"><?php echo ($hotType["name"]); ?></a>
+                        <div class="hot_product" style="display: none;" id="hot_<?php echo ($hotType["id"]); ?>">
+                            <?php if(is_array($hotType['list'])): $i = 0; $__LIST__ = $hotType['list'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$article): $mod = ($i % 2 );++$i;?><li><a href="/Article/detail/id/<?php echo ($article["id"]); ?>" target="_blank">
+                                    <img style="height: 122px;width: 118px" src="<?php echo ($article["cover"]); ?>"/> <span
+                                        class="black"><?php echo ($article["title"]); ?></span>
+                                    <span class="red"><?php echo ($article["source_price"]); ?></span></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+                        </div><?php endforeach; endif; else: echo "" ;endif; ?>
+                </div>
+                <ul class="shangppin">
+                    <div class="clear"></div>
+                </ul>
+                <script>
+                    $(function () {
+                        var content = $('.hot_product').eq(0).html();
+                        $(".shangppin").prepend(content);
+                        $('.hot_type').click(function () {
+                            var id = "#hot_" + $(this).data('id');
+                            var content = $(id).html() + "";
+                            $(".shangppin li").remove();
+                            $(".shangppin").prepend(content);
+                        });
+                    })
+                </script>
+            </div>
+            <div class="zhiding">
+                <div class="listTitle"><span class="redicon">置顶</span>
+                    <h4 class="itemName"><a href="#" target="_blank">爆料赏金计划[第六期]活动开启<span class="red">年货征集/天猫双倍奖励</span>
+                    </a></h4>
+                </div>
+            </div>
+            <?php if(is_array($articleList["data"])): $i = 0; $__LIST__ = $articleList["data"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$article): $mod = ($i % 2 );++$i;?><div class="list">
+                    <div class="listTitle"><a href="#" class="grayicon"><?php echo ($article["countryname"]); ?></a>
+                        <h4 class="itemName"><a href="/Article/detail/id/<?php echo ($article["id"]); ?>" target="_blank"><?php echo ($article["title"]); ?>
+                            <?php if($article['source_price'] > 0): ?><span class="red"><?php echo ($article["source_price"]); ?>元</span><?php endif; ?>
+                        </a></h4>
+                        <div class="clear"></div>
+                    </div>
+                    <a href="/Article/detail/id/<?php echo ($article["id"]); ?>" target="_blank" class="picLeft" title="">
+                        <img src="<?php echo ($article["cover"]); ?>" alt="" height="190px" width="190px"> </a>
+                    <div class="listRight">
+                        <div class="lrTop"><span class="lrTime">14:39</span> <span> 标签：
+                            <?php if(is_array($article["tags"])): $i = 0; $__LIST__ = $article["tags"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$tag): $mod = ($i % 2 );++$i;?><a href="javascript:void(0)"> <?php echo ($tag["tag_name"]); ?> </a><?php endforeach; endif; else: echo "" ;endif; ?>
+                             </span>
+                        </div>
+                        <div class="lrInfo">
+                            <?php echo(strLL($article['content'],50)); ?>  <a href="/Article/detail/id/<?php echo ($article["id"]); ?>" target="_blank">阅读全文</a></div>
+                        <div class="lrBot">
+                            <a data-id="<?php echo ($article["id"]); ?>" href="javascript:void(0)" class="good">
+                            <span class="scoreTotal"><b>值</b>
+                            <em><?php echo ($article["worth"]); ?></em></span>
+                                <span class="scoredInfo" setGood="<?php echo ($article["setGood"]); ?>">已打分</span>
+                                <span class="scoreAnimate">+1</span>
+                            </a>
+                            <a data-id="<?php echo ($article["id"]); ?>" href="javascript:void(0)" class="bad">
+                                <span class="scoreTotal">不值 <em><?php echo ($article["not_worth"]); ?></em></span>
+                                <span class="scoredInfo" setGood="<?php echo ($article["setGood"]); ?>">已打分</span>
+                                <span class="scoreAnimate">+1</span>
+                            </a>
+                            <a data-id="<?php echo ($article["id"]); ?>" href="javascript:void(0)" class="fav" title="收藏">
+                                <i class="icon-collect"></i><em><?php echo ($article["collect_num"]); ?></em></a>
+                            <a href="#" class="comment" title="评论" target="_blank">
+                                <i class="icon-comment"></i><em><?php echo ($article["comment_num"]); ?></em></a>
+                            <?php if(!empty($article['source_url'])): ?><div class="botPart">
+                                    <div class="buy"><a href="<?php echo ($article["source_url"]); ?>" target="_blank">直达链接<i>&gt;</i></a>
+                                    </div>
+                                    <a href="#" class="mall"><?php echo ($article["source_name"]); ?></a></div><?php endif; ?>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div><?php endforeach; endif; else: echo "" ;endif; ?>
 
-        <li><a href="#" target="_blank"><img src="/Public/images/good1.jpg"/> <span class="black">限U款赤足跑鞋</span> <span class="red">£31.44+£7.54</span></a> </li>
-        <li><a href="#" target="_blank"><img src="/Public/images/good1.jpg"/> <span class="black">耐克 Free 5.0 男款赤足跑鞋</span> <span class="red">£31中国（约￥380）</span></a> </li>
-        <li><a href="#" target="_blank"><img src="/Public/images/good1.jpg"/> <span class="black">限UK7：Nike 耐克 Free 5.0 男款赤足跑鞋</span> <span class="red">£31.44+£7.54直邮中国</span> </a> </li>
-        <li><a href="#" target="_blank"><img src="/Public/images/good1.jpg"/> <span class="black">限UK7：Nike 耐克 Free 5.0 男款赤足跑鞋</span> <span class="red">£31.44+£7.54约￥380）</span></a> </li>
-        <li><a href="#" target="_blank"><img src="/Public/images/good1.jpg"/> <span class="black">限UK7：Nike 耐克 Free 5.0 男款赤足跑鞋</span> <span class="red">£31.44+£7.5（约￥380）</span> </a> </li>
-        <li><a href="#" target="_blank"><img src="/Public/images/good1.jpg"/> <span class="black">限UK7：Nike 耐克 Free 5.0 男款赤足跑鞋</span> <span class="red">£31.44+£7.54直邮￥</span></a> </li>
+            <div class="green-black"> <?php echo ($articleList['page']); ?></div>
+            <script>
+                $(function () {
+                    $('.page').live('click', function () {
+                        var url = $(this).data('href');
+                        location.href = url;
+                    });
+                    $('.good').live('click', function () {
+                        var pid = $(this).data('id');
+                        $a=$(this);
+                        $.ajax({
+                            url: "/Ajax/isWorth",
+                            data: {pid: pid, worth: 1},
+                            type: 'POST',
+                            dataType: 'json',
+                            success: function (msg) {
+                                if (msg.status == 1) {
+                                    $a.find('.scoreAnimate').show(500).hide(500);
+                                    setTimeout(function(){
+                                        var i=$a.find('em').html();
+                                        $a.find('em').html(parseFloat(i)+1);
+                                        $a.parent('.lrBot').find('.scoredInfo').attr('setGood','1');
+                                    },1000);
 
-        <div class="clear"></div>
-      </ul>
-    </div>
-    <div class="zhiding">
-      <div class="listTitle"> <span class="redicon">置顶</span>
-        <h4 class="itemName"> <a href="#" target="_blank">爆料赏金计划[第六期]活动开启<span class="red">年货征集/天猫双倍奖励</span> </a></h4>
-      </div>
-    </div>
-    <div class="list" >
-      <div class="listTitle"> <a href="#" class="grayicon">优惠</a>
-        <h4 class="itemName"> <a href="#" target="_blank">限华东：阿联酋进口皇冠椰枣 250g<span class="red">13.8元</span></a></h4>
-        <div class="clear"></div>
-      </div>
-      <a href="#" target="_blank" class="picLeft" title=""> <img src="http://y.zdmimg.com/201512/31/5684c69c42c74.jpg_d200.jpg" alt="" height="190px" width="190px"> </a>
-      <div class="listRight">
-        <div class="lrTop"> <span class="lrTime">14:39</span> <span> 标签： <a href="#"> 生鲜食品 </a> <a href="#">节日礼品</a> </span> </div>
-        <div class="lrInfo"><a href="#" target="_blank">天猫</a>售价13.8元，凑单好价，需注意：仅配送上海，浙江，安徽，江西。此款皇冠椰枣产于阿联酋地区，由于高热、干燥的环境因素，糖份较高，口感香甜。此外还蕴含维生素C、维生素B1、维生素B2等多种维生素，营养价值较高。与普通红枣相比其脂肪及胆固醇极低，极大的满足了人...<a href="#" target="_blank">阅读全文</a></div>
-        <div class="lrBot"> <a href="#" class="good"> <span class="scoreTotal"><b>值</b> <em>5</em></span> <span class="scoredInfo">已打分</span> <span class="scoreAnimate">+1</span> </a> <a href="#" class="bad"> <span class="scoreTotal">不值 <em>2</em></span> <span class="scoredInfo">已打分</span> <span class="scoreAnimate">+1</span></a> <a href="#" class="fav" title="收藏"><i class="icon-collect"></i><em>0</em></a> <a href="#" class="comment" title="评论" target="_blank"><i class="icon-comment"></i><em>2</em></a>
-          <div class="botPart">
-            <div class="buy"> <a href="#" target="_blank">直达链接<i>&gt;</i></a> </div>
-            <a href="#" class="mall">天猫超市</a> </div>
-          <div class="clear"></div>
+                                }
+                            },
+                            error: function (ret) {
+                                alert(ret.responseText);
+                            }
+                        });
+                    }).hover(function(){
+                        var set=$(this).find('.scoredInfo').attr('setGood');
+                        if(set==1){
+                            $(this).find('.scoredInfo').show();
+                        }
+                    },function(){
+                        $(this).find('.scoredInfo').hide();
+                    });
+                    $('.bad').live('click', function () {
+                        var pid = $(this).data('id');
+                        $a=$(this);
+                        $.ajax({
+                            url: "/Ajax/isWorth",
+                            data: {pid: pid,worth:0},
+                            type: 'POST',
+                            dataType: 'json',
+                            success: function (msg) {
+                                if (msg.status == 1) {
+                                    $a.find('.scoreAnimate').show(500).hide(500);
+                                    setTimeout(function(){
+                                        var i=$a.find('em').html();
+                                        $a.find('em').html(parseFloat(i)+1);
+                                        $a.parent('.lrBot').find('.scoredInfo').attr('setGood','1');
+                                    },1000);
+                                }
+                            },
+                            error: function (ret) {
+                                alert(ret.responseText);
+                            }
+                        });
+                    }).hover(function(){
+                        var set=$(this).find('.scoredInfo').attr('setGood');
+                        if(set==1){
+                            $(this).find('.scoredInfo').show();
+                        }
+                    },function(){
+                        $(this).find('.scoredInfo').hide();
+                    });;
+                    $('.fav').live('click', function () {
+                        var pid = $(this).data('id');
+                        $a=$(this);
+                        $.ajax({
+                            url: "/Ajax/collect",
+                            data: {pid: pid},
+                            type: 'POST',
+                            dataType: 'json',
+                            success: function (msg) {
+                                if (msg.status == 1) {
+                                    var i=$a.find('em').html();
+                                    $a.find('em').html(parseFloat(i)+1);
+                                }
+                                else{
+                                    alert(msg.msg);
+                                }
+                            },
+                            error: function (ret) {
+                                alert(ret.responseText);
+                            }
+                        });
+                    });
+                })
+            </script>
         </div>
-      </div>
-      <div class="clear"></div>
-    </div>
-    <div class="list" >
-      <div class="listTitle"> <a href="#" class="grayicon">优惠</a>
-        <h4 class="itemName"> <a href="#" target="_blank">限华东：阿联酋进口皇冠椰枣 250g<span class="red">13.8元</span></a></h4>
-        <div class="clear"></div>
-      </div>
-      <a onclick="ga('send', 'event','门户','文章图片','739205_限华东：阿联酋进口皇冠椰枣 250g');" href="http://www.smzdm.com/p/739205" target="_blank" class="picLeft" title=""> <img src="http://y.zdmimg.com/201512/31/5684c69c42c74.jpg_d200.jpg" style="margin-top:0px" alt="限华东：阿联酋进口皇冠椰枣 250g" height="190px" width="190px"> </a>
-      <div class="listRight">
-        <div class="lrTop"> <span class="lrTime">14:39</span> <span> 标签： <a href="#"> 生鲜食品 </a> <a href="#">节日礼品</a> </span> </div>
-        <div class="lrInfo"><a href="#" target="_blank">天猫</a>售价13.8元，凑单好价，需注意：仅配送上海，浙江，安徽，江西。此款皇冠椰枣产于阿联酋地区，由于高热、干燥的环境因素，糖份较高，口感香甜。此外还蕴含维生素C、维生素B1、维生素B2等多种维生素，营养价值较高。与普通红枣相比其脂肪及胆固醇极低，极大的满足了人...<a href="#" target="_blank">阅读全文</a></div>
-        <div class="lrBot"> <a href="#" class="good"> <span class="scoreTotal"><b>值</b> <em>5</em></span> <span class="scoredInfo">已打分</span> <span class="scoreAnimate">+1</span> </a> <a href="#" class="bad"> <span class="scoreTotal">不值 <em>2</em></span> <span class="scoredInfo">已打分</span> <span class="scoreAnimate">+1</span></a> <a href="#" class="fav" title="收藏"><i class="icon-collect"></i><em>0</em></a> <a href="#" class="comment" title="评论" target="_blank"><i class="icon-comment"></i><em>2</em></a>
-          <div class="botPart">
-            <div class="buy"> <a href="#" target="_blank">直达链接<i>&gt;</i></a> </div>
-            <a href="#" class="mall">天猫超市</a> </div>
-          <div class="clear"></div>
+        <div class="rightwrap">
+            <div class="rightPanel">
+                <div class="userInfo"><a href="#" class="userPic" target="_blank">
+                    <img src="/Public/images/default_small.png" alt="头像"></a>
+                    <div class="userRight">
+                        <?php if(empty($p_uid)): ?><p><a class="zhiyou_login">登录</a>，发现更多精彩</p>
+                            <?php else: ?>
+                            <div> Hi <em>你好</em></div>
+
+                            <a href="#" title="值友幸运屋" target="_blank">值友幸运屋</a> &nbsp;&nbsp;
+                            <a href="#" title="新手入门" target="_blank">新手入门</a>
+                    </div>
+                    <div class="scoreBox"><a class="signScore" target="_blank">签到领积分</a>
+                        <a class="scoreExchange" href="#" target="_blank">积分兑换</a><?php endif; ?>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- 分类导航开始 -->
+            <div class="rightPanel">
+                <div class="mult-nav"><span class="commodity-nav-title mult-nav-hover">分类导航</span></div>
+                <div class="commodity-nav" style="display: block;">
+                    <?php if(is_array($productTypes)): $i = 0; $__LIST__ = $productTypes;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?><a target="_blank" href="#"><span><i class="icon-diannaoshuma"></i><?php echo ($item["name"]); ?></span></a><?php endforeach; endif; else: echo "" ;endif; ?>
+
+                </div>
+
+
+            </div>
+
+
+
         </div>
-      </div>
-
-      <div class="clear"></div>
-       <ul _hover-ignore="1" class="pagination"><li><a href="http://www.smzdm.com/p1" class="">1</a></li><li><a class="" href="http://www.smzdm.com/p2">2</a></li><li><a class="pageCurrent" href="http://www.smzdm.com/p3">3</a></li><li><a _hover-ignore="1" href="http://www.smzdm.com/p4">4</a></li><li><a href="http://www.smzdm.com/p5">5</a></li><li><a href="http://www.smzdm.com/p6">6</a></li><li><span class="dotStyle">...</span></li><li class="pagedown"><a _hover-ignore="1" href="http://www.smzdm.com/p4">下一页</a><span>&gt;</span></li></ul>
-    </div>
-  </div>
-  <div class="rightwrap">
-    <div class="rightPanel">
-      <div class="userInfo"> <a href="#" class="userPic" target="_blank"><img src="/Public/images/default_small.png" alt="头像"></a>
-        <div class="userRight">
-          <div> Hi <em>你好</em> </div>
-          <p><a class="zhiyou_login">登录</a>，发现更多精彩</p>
-          <a href="#" title="值友幸运屋" target="_blank">值友幸运屋</a> &nbsp;&nbsp;
-          <a href="#" title="新手入门" target="_blank">新手入门</a> </div>
-        <div class="scoreBox"> <a class="signScore" target="_blank">签到领积分</a> <a class="scoreExchange" href="#" target="_blank">积分兑换</a> </div>
-      </div>
-    </div>
-    
-    <!-- 分类导航开始 -->
-    <div class="rightPanel">
-      <div class="mult-nav"> <span class="commodity-nav-title mult-nav-hover" >分类导航</span> </div>
-      <div class="commodity-nav" style="display: block;">
-        <a target="_blank" href="#"><span><i class="icon-diannaoshuma"></i>电脑数码</span></a>
-        <a target="_blank" href="#"><span><i class="icon-jiayongdianqi"></i>家用电器</span></a>
-        <a target="_blank" href="#"><span><i class="icon-yundonghuwai"></i>运动户外</span></a>
-        <a target="_blank" href="#"><span><i class="icon-fushixiebao"></i>服饰鞋包</span></a>
-        <a target="_blank" href="#"><span><i class="icon-gehuhuazhuang"></i>个护化妆</span></a>
-        <a target="_blank" href="#"><span><i class="icon-muyingyongpin"></i>母婴用品</span></a>
-        <a target="_blank" href="#"><span><i class="icon-riyongbaihuo"></i>日用百货</span></a>
-        <a target="_blank" href="#"><span><i class="icon-shipinbaojian"></i>食品保健</span></a>
-        <a target="_blank" href="#"><span><i class="icon-lipinzhongbiao"></i>礼品钟表</span></a>
-        <a target="_blank" href="#"><span><i class="icon-tushuyinxiang"></i>图书音像</span></a>
-        <a target="_blank" href="#"><span><i class="icon-wanmoyueqi"></i>玩模乐器</span></a>
-        <a target="_blank" href="#"><span><i class="icon-bangongshebei"></i>办公设备</span></a>
-        <a target="_blank" href="#"><span><i class="icon-jiajujiazhuang"></i>家居家装</span></a>
-        <a target="_blank" href="#"><span><i class="icon-qicheyongpin"></i>汽车用品</span></a>
-        <a target="_blank" href="#"><span>其他分类<i class="icon-right_yuanjiantou"></i></span></a>
-      </div>
-
 
     </div>
-    
-    <!-- 最新发现开始 -->
-    <div class="rightPanel beyondHide">
-      <ul class="tab_nav">
-        <li class="tab_faxian_li current_item">
-          <h3>最新发现</h3>
-        </li>
-        <li class="tab_faxian_li">
-          <h3>热门发现</h3>
-        </li>
-        <li class="more"><a href="#" target="_blank">更多 &gt;</a></li>
-      </ul>
-      <div class="tab_info_con">
-        <ul class="ninePicBox">
-          <li> <a href="#" target="_blank"> <img src="http://ym.zdmimg.com/201601/04/5689c6eb7c095.jpg_a100.jpg" alt="" style="width:94px; height:94px;">
-            <div class="tabCon">
-              <p>nvc-lighting 雷士照明 ESX9000/4 吸顶灯 99元（满199减100）</p>
-              <span>99元（满199减100）</span> </div>
-            </a></li>
-          <li> <a href="#" target="_blank"> <img src="http://y.zdmimg.com/201601/04/5689cf76d34bd.jpg_a100.jpg" alt="" style="width:94px; height:94px;">
-            <div class="tabCon">
-              <p>Libbey 利比 无铅红酒杯 2支装 19.9</p>
-              <span>19.9</span> </div>
-            </a></li>
-          <li class="gogo"> <a href="#" target="_blank"> <img src="http://ym.zdmimg.com/201601/04/5689c77f32f41.jpg_a100.jpg" alt="" style="width:94px; height:94px;">
-            <div class="tabCon">
-              <p>SUPOR 苏泊尔EC1232F03 32cm 可立盖 无涂层 炒锅 179元包邮（满200减40）</p>
-              <span>179元包邮（满200减40）</span> </div>
-            </a></li>
-          <li> <a href="#" target="_blank" > <img src="http://ym.zdmimg.com/201601/03/56893e7a46b8a.jpg_a100.jpg" alt="" style="width:94px; height:94px;">
-            <div class="tabCon">
-              <p>ecco 爱步 Elaine 女款中帮靴 $83.96（需用码，约￥705）</p>
-              <span>$83.96（需用码，约￥705）</span> </div>
-            </a></li>
-          <li> <a href="#" target="_blank"> <img src="http://ym.zdmimg.com/201601/04/5689c82d6920a.jpg_a100.jpg" alt="包邮" style="width:94px; height:94px;">
-            <div class="tabCon">
-              <p>THERMOS 膳魔师 500ml JNL-501-PCH 不锈钢 保温杯 199元包邮</p>
-              <span>199元包邮</span> </div>
-            </a></li>
-          <li class="gogo"> <a href="#" target="_blank" > <img src="http://ym.zdmimg.com/201512/31/5685490245d68.jpg_a100.jpg" alt="" style="width:94px; height:94px;">
-            <div class="tabCon">
-              <p>JOYOUNG 九阳 JYS-A800 绞肉机 79元包邮</p>
-              <span>79元包邮</span> </div>
-            </a></li>
-          <li class=""> <a href="#" target="_blank"> <img src="http://ym.zdmimg.com/201601/04/5689cb42a8c1a.jpg_a100.jpg" alt="" style="width:94px; height:94px;">
-            <div class="tabCon">
-              <p>Calvin Klein 男士 黑色 假两件样式 羊毛夹克 $60.41+$32.28直邮中国(约￥594)</p>
-              <span>$60.41+$32.28直邮中国(约￥594)</span> </div>
-            </a></li>
-          <li> <a href="#" target="_blank"> <img src="http://y.zdmimg.com/201507/14/55a4cfeeb7077.jpeg_a100.jpg" alt="" style="width:94px; height:94px;">
-            <div class="tabCon">
-              <p>PEARL LIFE 珍珠生活 GP-2055 高纯铁无涂层平底炒锅 299元包邮（399-100）</p>
-              <span>299元包邮（399-100）</span> </div>
-            </a></li>
-          <li class="gogo"> <a href="#" target="_blank" > <img src="http://ym.zdmimg.com/201601/04/5689c918c1519.jpg_a100.jpg" alt="" style="width:94px; height:94px;">
-            <div class="tabCon">
-              <p>JASUN 佳星1000W-2000W 电热丝取暖器 39元</p>
-              <span>39元</span> </div>
-            </a></li>
-        </ul>
-      </div>
-      <div class="tab_info_con">
-        <ul class="ninePicBox">
-          <li class=""><a href="#" target="_blank"> <img src="http://ym.zdmimg.com/201601/03/5688b7cf37e829405.png_a100.jpg" alt="" style="width:94px; height:94px;">
-            <div class="tabCon">
-              <p>京东 京东金融 领取 10元白条券</p>
-              <span>10元白条券</span> </div>
-            </a></li>
-          <li class=""><a href="#" target="_blank"> <img src="http://ym.zdmimg.com/201601/03/5688c13eefae88116.png_a100.jpg" alt="" style="width:94px; height:94px;">
-            <div class="tabCon">
-              <p>银联钱包 春节特惠 购火车票立减10元 每账户一次</p>
-              <span>购火车票立减10元 每账户一次</span> </div>
-            </a></li>
-          <li class="gogo"><a href="#" target="_blank" > <img src="http://y.zdmimg.com/201502/20/54e7439558834.jpeg_a100.jpg" alt="" style="width:94px; height:94px;">
-            <div class="tabCon">
-              <p>SHARP 夏普 Aquos Crystal 8GB 无边框 手机 $89.99（约￥630）</p>
-              <span>$89.99（约￥630）</span> </div>
-            </a></li>
-          <li><a href="#" target="_blank" > <img src="http://ym.zdmimg.com/201601/03/5688bc9026090.jpg_a100.jpg" alt="" style="width:94px; height:94px;">
-            <div class="tabCon">
-              <p>德国UHU 强力胶35ML 8.5元包邮</p>
-              <span>8.5元包邮</span> </div>
-            </a></li>
-          <li><a href="#"  target="_blank" > <img src="http://ym.zdmimg.com/201601/03/56886b79be2e1.jpg_a100.jpg" alt="" style="width:94px; height:94px;">
-            <div class="tabCon">
-              <p>smartisan 锤子 坚果 32GB 蓝色 移动联通4G手机 双卡双待 799元包邮</p>
-              <span>799元包邮</span> </div>
-            </a></li>
-          <li class="gogo"><a href="#" target="_blank" > <img src="http://y.zdmimg.com/201508/05/55c1eb920e635.jpeg_a100.jpg" alt="" style="width:94px; height:94px;">
-            <div class="tabCon">
-              <p>CHOETECH C0043 18W 第二代 QC2.0 充电器 29.9元</p>
-              <span>29.9元</span> </div>
-            </a></li>
-          <li><a href="#" target="_blank"> <img src="http://ym.zdmimg.com/201601/03/5688ce0280c4a370.png_a100.jpg" alt="" style="width:94px; height:94px;">
-            <div class="tabCon">
-              <p>苏宁易购 十天十夜跨年狂欢 活动专场 10亿红包疯抢、买2付1</p>
-              <span>10亿红包疯抢、买2付1</span> </div>
-            </a></li>
-          <li><a href="#" target="_blank"> <img src="http://ym.zdmimg.com/201601/03/5688b12cef19f.jpg_a100.jpg" alt="" style="width:94px; height:94px;">
-            <div class="tabCon">
-              <p>SAUCONY GRID 9000 复古跑步鞋 男 S70077-A  471元包邮（满500减50）</p>
-              <span>471元包邮（满500减50）</span> </div>
-            </a></li>
-          <li class="gogo"><a href="#" target="_blank"> <img src="http://ym.zdmimg.com/201601/03/56892b6665b4a.jpg_a100.jpg" alt="" style="width:94px; height:94px;">
-            <div class="tabCon">
-              <p>广西荔浦芋头800g 7.9元</p>
-              <span>7.9元</span> </div>
-            </a></li>
-        </ul>
-      </div>
-    </div>
-    
-
-    
-
-  </div>
-  
-  </div>
-  <div class="clear"></div>
+    <div class="clear"></div>
 </section>
+
 
 
 <footer>
